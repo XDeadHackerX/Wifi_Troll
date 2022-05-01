@@ -31,7 +31,9 @@
 
 [3] La herramienta soporta escaneos y ataques a las bandas Wifi 5GHz.
 
-[4] El Script esta en desarrollo, con el paso del tiempo se ira mejorando y metiendo nuevas opciones.
+[4] La opción 4 instala y ejecuta una herramienta desarrollada por mi llamada Inhibidor, está disponible en mis repositorios.
+
+[5] El Script está en desarrollo, con el paso del tiempo se irá mejorando y metiendo nuevas opciones.
 
 ## 🔎 Versiones 🔎
 
