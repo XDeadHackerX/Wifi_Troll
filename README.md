@@ -1,4 +1,4 @@
-# 🧌 Wifi_Troll 🧌
+# 🧨 Wifi_Troll 🧨
 
 > Herramienta creada por XDeadHackerX
 
