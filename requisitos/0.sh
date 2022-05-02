@@ -19,6 +19,7 @@ echo
 echo "[1] Requisitos"
 echo
 sudo apt-get install xterm
+sudo apt-get install gnome-terminal
 sudo apt install aircrack-ng
 sudo apt-get install mdk4
 sudo apt install hping3
