@@ -30,6 +30,7 @@ if [ $opc2 = y ]
 echo "OK"
 fi
 sudo ifconfig $interfaz promisc >/dev/null
+sudo airmon-ng start $interfaz >/dev/null
 echo "======================="
 echo "Activando Modo Monitor"
 echo "======================="
@@ -41,7 +42,7 @@ echo "--------------->""      |"
 sleep 1
 echo "--------------------->""|"
 echo "======================="
-sudo airmon-ng start $interfaz
+sudo airmon-ng 
 echo
 read -p "[*] Escribe la Interfaz de la Tarjeta de Red en modo Monitor (Ej: wlan0mon o wlan0): " interfaz2
 echo

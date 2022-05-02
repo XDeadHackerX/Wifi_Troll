@@ -36,6 +36,7 @@ read -p "Elige una opcion: " opc1
 				echo "OK"
 				fi
 				sudo ifconfig $interfaz promisc >/dev/null
+				sudo airmon-ng start $interfaz >/dev/null
 				echo "======================="
 				echo "Activando Modo Monitor"
 				echo "======================="
@@ -47,7 +48,7 @@ read -p "Elige una opcion: " opc1
 				sleep 1
 				echo "--------------------->""|"
 				echo "======================="
-				sudo airmon-ng start $interfaz
+				sudo airmon-ng 
 				echo
 				read -p "[*] Escribe la Interfaz de la Tarjeta de Red en modo Monitor (Ej: wlan0mon o wlan0): " interfaz2
 				echo
@@ -97,6 +98,7 @@ read -p "Elige una opcion: " opc1
 				echo "OK"
 				fi
 				sudo ifconfig $interfaz promisc >/dev/null
+				sudo airmon-ng start $interfaz >/dev/null
 				echo "======================="
 				echo "Activando Modo Monitor"
 				echo "======================="
@@ -108,7 +110,7 @@ read -p "Elige una opcion: " opc1
 				sleep 1
 				echo "--------------------->""|"
 				echo "======================="
-				sudo airmon-ng start $interfaz
+				sudo airmon-ng 
 				echo
 				read -p "[*] Escribe la Interfaz de la Tarjeta de Red en modo Monitor (Ej: wlan0mon o wlan0): " interfaz2
 				echo
