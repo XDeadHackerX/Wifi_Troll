@@ -31,9 +31,9 @@
 
 [3] La herramienta soporta escaneos y ataques a las bandas Wifi 5GHz.
 
-[4] La opción 4 instala y ejecuta una herramienta desarrollada por mi llamada Inhibidor, está disponible en mis repositorios.
+[4] La opción 4 instala y ejecuta una herramienta desarrollada por [mi](https://github.com/XDeadHackerX) llamada [Inhibitor](https://github.com/XDeadHackerX/Inhibitor), está disponible en mis repositorios.
 
-[5] El Script está en desarrollo, con el paso del tiempo se irá mejorando y metiendo nuevas opciones [Inhibitor/XDeadHackerX](https://github.com/XDeadHackerX/Inhibitor)
+[5] El Script está en desarrollo, con el paso del tiempo se irá mejorando y metiendo nuevas opciones.
 
 ## 🔎 Versiones 🔎
 
