@@ -39,4 +39,4 @@
 
 (v1.0) --->   Versión Original.
 
-Copyright © 2022, XDeadHackerX
+**Copyright © 2022, XDeadHackerX**
