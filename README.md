@@ -33,7 +33,7 @@
 
 [4] La opción 4 instala y ejecuta una herramienta desarrollada por mi llamada Inhibidor, está disponible en mis repositorios.
 
-[5] El Script está en desarrollo, con el paso del tiempo se irá mejorando y metiendo nuevas opciones.
+[5] El Script está en desarrollo, con el paso del tiempo se irá mejorando y metiendo nuevas opciones. [GitHub Pages](https://github.com/XDeadHackerX/Inhibitor)
 
 ## 🔎 Versiones 🔎
 
