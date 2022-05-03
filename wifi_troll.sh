@@ -20,7 +20,7 @@ echo "                          ================================================
 echo "                          [0]                    Requisitos"
 echo "                          [1]                 Escaner Red/Wifi"
 echo "                          [2]             Crear Redes Wifi masivas"
-echo "                          [3]           Ver el Trafico de nuestra Red"
+echo "                          [3]          Espiar el Trafico de nuestra Red"
 echo "                          [4]      Geolocalizacion exacta de una Red Wifi"
 echo "                          [5]  Inhibir cualquier Red Wifi o Dispositivo asociado"
 echo "                                                 -----------"
