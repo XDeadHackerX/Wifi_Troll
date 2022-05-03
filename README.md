@@ -2,7 +2,7 @@
 
 > Herramienta creada por XDeadHackerX
 
-[![Wifi-Troll-1-1.png](https://i.postimg.cc/htDwYxM2/Wifi-Troll-1-1.png)](https://postimg.cc/KRWJk16T)
+[![Wifi-Troll-1-1.png](https://i.postimg.cc/jqNPpFFj/Wifi-Troll-1-1.png)](https://postimg.cc/dDshd4vM)
 
 
 ## 🛠 Instalar Herramienta 🛠
