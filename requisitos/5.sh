@@ -10,35 +10,27 @@ echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|   
 echo "                           \/                   /_____/                                       "
 echo "                                               ¯\_(ツ)_/¯"
 echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.0  ︻デ═一 " 
+echo "                                ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------"
 echo
 echo
-echo "[1] Requisitos"
+echo "[5] Inhibir cualquier Red Wifi o Dispositivo asociado"
 echo
-sudo apt-get install xterm
-sudo apt-get install gnome-terminal
-sudo apt install aircrack-ng
-sudo apt-get install mdk4
-sudo apt install hping3
-sudo apt-get install bettercap
-sudo apt-get install -y netdiscover
-
-cd requisitos
-
-sudo rm -r geowifi
-sudo rm -r Inhibitor
-
-sudo git clone https://github.com/GONZOsint/geowifi.git && cd geowifi && apt install virtualenv && python3 -m virtualenv venv && source venv/bin/activate && python3 -m pip install -r requirements.txt
-
-cd ..
-
-sudo git clone https://github.com/XDeadHackerX/Inhibitor.git && cd Inhibitor && chmod 777 installer.sh && cp requisitos/es/inhibitor.sh . && chmod 777 inhibitor.sh
-
-cd ..
-cd ..
-
-sudo chmod 777 wifi_troll.sh
-sudo bash wifi_troll.sh
+cd requisitos >/dev/null
+cd Inhibitor >/dev/null
+echo "=============================="
+echo "       Ejecutando Scrit"
+echo "   Creado por XDeadHackerX"
+echo "=============================="
+echo "-------->""                    |"
+sleep 1
+echo "--------------->""             |"
+sleep 1
+echo "---------------------->""      |"
+sleep 1
+echo "---------------------------->""|"
+echo "=============================="
+echo
+bash inhibitor.sh

