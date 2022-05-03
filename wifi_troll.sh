@@ -10,7 +10,7 @@ echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|   
 echo "                           \/                   /_____/                                       "
 echo "                                               ¯\_(ツ)_/¯"
 echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.0  ︻デ═一 " 
+echo "                                ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------"
@@ -18,13 +18,14 @@ echo
 echo
 echo "                          ========================================================"
 echo "                          [0]                    Requisitos"
-echo "                          [1]            Escaner avanzado Redes Wifi"
+echo "                          [1]                 Escaner Red/Wifi"
 echo "                          [2]             Crear Redes Wifi masivas"
-echo "                          [3]      Geolocalizacion exacta de una Red Wifi"
-echo "                          [4]  Inhibir cualquier Red Wifi o Dispositivo asociado"
-echo "                                                -----------"
-echo "                          [5] ==================""|""☢ Salir ☢""|""======================="
-echo "                                                -----------"
+echo "                          [3]           Ver el Trafico de nuestra Red"
+echo "                          [4]      Geolocalizacion exacta de una Red Wifi"
+echo "                          [5]  Inhibir cualquier Red Wifi o Dispositivo asociado"
+echo "                                                 -----------"
+echo "                          [6] ===================""|""☢ Salir ☢""|""======================"
+echo "                                                 -----------"
 echo
 read -p " [*] Elige una opcion: " opc
 	case $opc in
@@ -38,7 +39,9 @@ read -p " [*] Elige una opcion: " opc
 				;;
 			4 )	bash requisitos/4.sh
 				;;
-			5 )	exit
+			5 )	bash requisitos/5.sh
+				;;
+			6 )	exit
 				;;
 			* )	echo
 				echo "$RRPLY No es una opcion valida"
