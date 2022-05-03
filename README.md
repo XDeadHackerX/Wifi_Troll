@@ -39,6 +39,6 @@
 
 (v1.0) --->   Versión Original.
 
-(v1.1) --->   Nuevo Apartado [3] Espiar el Trafico de nuestra red, podremos ver que servicios Webs esta usando un dispositivo de nuestra red o de todos los dispositivos de nuestra red. Grandes cambios en el Apartado [1] Escaner Red/Wifi, podremos analizar los dispositivos conectados a nuestra red o ver las redes Wifi de alrededor y los dispositivos Wifi conectados a los Wifi. Optimizacion del codigo, correcion de errores, mejoras visuales.
+(v1.1) --->   Nuevo Apartado [3] Espiar el Trafico de nuestra red, podremos ver que servicios Webs esta usando un dispositivo de nuestra red o de todos los dispositivos de nuestra red. Grandes cambios en el Apartado [1] Escaner Red/Wifi, podremos analizar los dispositivos conectados a nuestra red o ver las redes Wifi de alrededor (Dandote a escoger entre 3 herramientas para hacerlo) y los dispositivos Wifi conectados a los Wifi. Optimizacion del codigo, correcion de errores, mejoras visuales.
 
 **Copyright © 2022, XDeadHackerX**
