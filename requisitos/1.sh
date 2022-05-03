@@ -98,94 +98,107 @@ read -p "[*] Elige una opcion: " opc4
 				echo "          -------------------------------------------------------------------------------------------"
 				echo
 				echo
-				echo "[#] Pulse Ctrl + c (Para detener el Escaneo)"
+				echo "[#] Elige el Tipo de Escaneo"
 				echo
-				echo "==========================="
-				echo "[1] Escaner con Aircrack-ng"
-				echo "[2] Escaner con Bettercap"
-				echo "[3] Escaner con Wash"
-				echo "==========================="
+				echo "===================================================="
+				echo "[1] Escaner avanzado Redes Wifi"
+				echo "[2] Escanear dispositivos conectados a un Wifi Ajeno"
+				echo "===================================================="
 				echo
-				read -p "Elige una opcion: " opc4
-					case $opc4 in
-							1 )	echo
-								sudo airodump-ng $interfaz2 --band abg
+				read -p "Elige una opcion: " opc5
+					case $opc5 in
+							1 )	clear
 								echo
-								echo "[#] Desactivando Ataque y Protocolos"
+								echo "                     __      __ .__   _____ .__        ___________                .__   .__   "
+								echo "                    /  \    /  \|__|_/ ____\|__|       \__    ___/_______   ____  |  |  |  |  "
+								echo "                    \   \/\/   /|  |\   __\ |  |         |    |   \_  __ \ /  _ \ |  |  |  |  " 
+								echo "                     \        / |  | |  |   |  |         |    |    |  | \/(  <_> )|  |__|  |__"
+								echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|    \____/ |____/|____/"
+								echo "                           \/                   /_____/                                       "
+								echo "                                               ¯\_(ツ)_/¯"
+								echo "                              __________________________________________________"					
+								echo "                                ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
+								echo "          -------------------------------------------------------------------------------------------"
+								echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
+								echo "          -------------------------------------------------------------------------------------------"
 								echo
-								sudo ifconfig $interfaz2 down >/dev/null
-								sudo macchanger -p $interfaz2 >/dev/null
-								sudo ifconfig $interfaz2 up >/dev/null
-								sudo ifconfig $interfaz2 -promisc >/dev/null
-								sudo airmon-ng stop $interfaz2 >/dev/null
-								sudo ifconfig $interfaz -promisc >/dev/null
-								sudo systemctl restart NetworkManager.service >/dev/null
-								echo "=============================="
-								echo "        Desactivando"
-								echo "Ataque/Modo Monitor/Seguridad"
-								echo "=============================="
-								echo "-------->""                    |"
-								sleep 1
-								echo "--------------->""             |"
-								sleep 1
-								echo "---------------------->""      |"
-								sleep 1
-								echo "---------------------------->""|"
-								echo "=============================="
+								echo
+								echo "[#] Pulse Ctrl + c (Para detener el Escaneo una vez haya comenzado)"
+								echo
+								echo "==========================="
+								echo "[1] Escaner con Aircrack-ng"
+								echo "[2] Escaner con Bettercap"
+								echo "[3] Escaner con Wash"
+								echo "==========================="
+								echo
+								read -p "Elige una opcion: " opc4
+									case $opc4 in
+											1 )	echo
+												sudo airodump-ng $interfaz2 --band abg
+												;;
+											2 )	echo
+												sudo bettercap -iface $interfaz2 -caplet requisitos/1.2.cap
+												;;
+											3 )	echo
+												sudo wash -2 -5 -a -i $interfaz2
+												;;
+											* )	echo
+												echo "$RRPLY No es una opcion valida"
+									esac
 								;;
-							2 )	echo
-								sudo bettercap -iface $interfaz2 -caplet requisitos/1.2.cap
+							2 )	clear
 								echo
-								echo "[#] Desactivando Ataque y Protocolos"
+								echo "                     __      __ .__   _____ .__        ___________                .__   .__   "
+								echo "                    /  \    /  \|__|_/ ____\|__|       \__    ___/_______   ____  |  |  |  |  "
+								echo "                    \   \/\/   /|  |\   __\ |  |         |    |   \_  __ \ /  _ \ |  |  |  |  " 
+								echo "                     \        / |  | |  |   |  |         |    |    |  | \/(  <_> )|  |__|  |__"
+								echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|    \____/ |____/|____/"
+								echo "                           \/                   /_____/                                       "
+								echo "                                               ¯\_(ツ)_/¯"
+								echo "                              __________________________________________________"					
+								echo "                                ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
+								echo "          -------------------------------------------------------------------------------------------"
+								echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
+								echo "          -------------------------------------------------------------------------------------------"
 								echo
-								sudo ifconfig $interfaz2 down >/dev/null
-								sudo macchanger -p $interfaz2 >/dev/null
-								sudo ifconfig $interfaz2 up >/dev/null
-								sudo ifconfig $interfaz2 -promisc >/dev/null
-								sudo airmon-ng stop $interfaz2 >/dev/null
-								sudo ifconfig $interfaz -promisc >/dev/null
-								sudo systemctl restart NetworkManager.service >/dev/null
-								echo "=============================="
-								echo "        Desactivando"
-								echo "Ataque/Modo Monitor/Seguridad"
-								echo "=============================="
-								echo "-------->""                    |"
-								sleep 1
-								echo "--------------->""             |"
-								sleep 1
-								echo "---------------------->""      |"
-								sleep 1
-								echo "---------------------------->""|"
-								echo "=============================="
-								;;
-							3 )	echo
+								echo
+								echo "[#] Pulse Ctrl + c (Para detener el Escaneo una vez haya comenzado)"
+								echo
 								sudo wash -2 -5 -a -i $interfaz2
+								read -p "[*] Copia el BSSID del Wifi Objetivo y pegelo a continuacion: " bssid
+								read -p "[*] Copia el Canal (Ch) del Wifi Objetivo y pegelo a continuacion: " ch
 								echo
-								echo "[#] Desactivando Ataque y Protocolos"
-								echo
-								sudo ifconfig $interfaz2 down >/dev/null
-								sudo macchanger -p $interfaz2 >/dev/null
-								sudo ifconfig $interfaz2 up >/dev/null
-								sudo ifconfig $interfaz2 -promisc >/dev/null
-								sudo airmon-ng stop $interfaz2 >/dev/null
-								sudo ifconfig $interfaz -promisc >/dev/null
-								sudo systemctl restart NetworkManager.service >/dev/null
-								echo "=============================="
-								echo "        Desactivando"
-								echo "Ataque/Modo Monitor/Seguridad"
-								echo "=============================="
-								echo "-------->""                    |"
 								sleep 1
-								echo "--------------->""             |"
-								sleep 1
-								echo "---------------------->""      |"
-								sleep 1
-								echo "---------------------------->""|"
-								echo "=============================="
+								echo "Listo"
+								echo "Pulse Ctrl + c para finalizar el Scaneo"
+								sleep 3
+								sudo airodump-ng -c $ch --bssid $bssid $interfaz2 --band abg
 								;;
 							* )	echo
 								echo "$RRPLY No es una opcion valida"
 					esac
+				echo
+				echo "[#] Desactivando Ataque y Protocolos"
+				echo
+				sudo ifconfig $interfaz2 down >/dev/null
+				sudo macchanger -p $interfaz2 >/dev/null
+				sudo ifconfig $interfaz2 up >/dev/null
+				sudo ifconfig $interfaz2 -promisc >/dev/null
+				sudo airmon-ng stop $interfaz2 >/dev/null
+				sudo ifconfig $interfaz -promisc >/dev/null
+				sudo systemctl restart NetworkManager.service >/dev/null
+				echo "=============================="
+				echo "        Desactivando"
+				echo "Ataque/Modo Monitor/Seguridad"
+				echo "=============================="
+				echo "-------->""                    |"
+				sleep 1
+				echo "--------------->""             |"
+				sleep 1
+				echo "---------------------->""      |"
+				sleep 1
+				echo "---------------------------->""|"
+				echo "=============================="
 	esac
 echo
 echo

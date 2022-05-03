@@ -16,7 +16,7 @@ echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es ú
 echo "          -------------------------------------------------------------------------------------------"
 echo
 echo
-echo "[3] Ver el Trafico de nuestra Red"
+echo "[3] Espiar el Trafico de nuestra Red"
 echo
 read -p "[*] Escribe la Ip de Red (Ej: 192.168.1.0 o 192.168.0.0): " opc1
 echo
