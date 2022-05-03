@@ -39,6 +39,14 @@ read -p "[*] Elige una opcion: " opc4
 				echo
 				;;
 			2 )	echo
+				echo "===================================================="
+				echo "[1] Escaner avanzado Redes Wifi"
+				echo "[2] Escanear dispositivos conectados a un Wifi Ajeno"
+				echo "===================================================="
+				echo
+				read -p "Elige una opcion: " opc5
+				####Activacion Modo Monitor y Modo Seguro####
+				echo
 				sudo airmon-ng
 				echo
 				read -p "[*] Escribe la Interfaz de la Tarjeta de Red (Ej: wlan0): " interfaz
@@ -82,30 +90,7 @@ read -p "[*] Elige una opcion: " opc4
 				sleep 1
 				echo "--------------------->""|"
 				echo "======================="
-				clear
-				echo
-				echo "                     __      __ .__   _____ .__        ___________                .__   .__   "
-				echo "                    /  \    /  \|__|_/ ____\|__|       \__    ___/_______   ____  |  |  |  |  "
-				echo "                    \   \/\/   /|  |\   __\ |  |         |    |   \_  __ \ /  _ \ |  |  |  |  " 
-				echo "                     \        / |  | |  |   |  |         |    |    |  | \/(  <_> )|  |__|  |__"
-				echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|    \____/ |____/|____/"
-				echo "                           \/                   /_____/                                       "
-				echo "                                               ¯\_(ツ)_/¯"
-				echo "                              __________________________________________________"					
-				echo "                                ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
-				echo "          -------------------------------------------------------------------------------------------"
-				echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
-				echo "          -------------------------------------------------------------------------------------------"
-				echo
-				echo
-				echo "[#] Elige el Tipo de Escaneo"
-				echo
-				echo "===================================================="
-				echo "[1] Escaner avanzado Redes Wifi"
-				echo "[2] Escanear dispositivos conectados a un Wifi Ajeno"
-				echo "===================================================="
-				echo
-				read -p "Elige una opcion: " opc5
+					##Se ejecuta la opcion escogida##
 					case $opc5 in
 							1 )	clear
 								echo
@@ -137,7 +122,7 @@ read -p "[*] Elige una opcion: " opc4
 												sudo airodump-ng $interfaz2 --band abg
 												;;
 											2 )	echo
-												sudo bettercap -iface $interfaz2 -caplet requisitos/1.2.cap
+												sudo bettercap -iface $interfaz2 -eval 'set ticker.commands "clear; wifi.show"; wifi.recon on; ticker on'
 												;;
 											3 )	echo
 												sudo wash -2 -5 -a -i $interfaz2
