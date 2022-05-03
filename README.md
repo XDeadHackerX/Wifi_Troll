@@ -27,7 +27,7 @@
 
 [1] No hace falta poner la Tarjeta en Modo Monitor, las opciones que requieren de este Modo se activan y se desactivan de forma automática.
 
-[2] Las opciones 1, 2, 3 y 4 cuentan con Modo Seguro, haciendo que cambie la MAC de la Tarjeta por una random cada vez que se ejecute una de estas opciones.
+[2] Las opciones 1, 2, y 4 cuentan con Modo Seguro, haciendo que cambie la MAC de la Tarjeta por una random cada vez que se ejecute una de estas opciones.
 
 [3] La herramienta soporta escaneos y ataques a las bandas Wifi 5GHz.
 
