@@ -41,9 +41,9 @@
 
 (v1.1) --->   Nuevo Apartado [3] Espiar el Tráfico de nuestra red, podremos ver que servicios Webs está usando un dispositivo de nuestra red o de todos los dispositivos de nuestra red (HTTP y HTTPS). Grandes cambios en el Apartado [1] Escáner Red/Wifi, podremos analizar los dispositivos conectados a nuestra red o ver las redes Wifi de alrededor (Dándote a escoger entre 3 herramientas para hacerlo) y los dispositivos Wifi conectados a los Wifis. Optimización del código, corrección de errores, mejoras visuales.
 
-### 🥷 Creado por XDeadHackerX 🥷
+## ⭐☕ Creado por XDeadHackerX ☕⭐
 
-**Si consideras que este proyecto ha sido útil, te agradecería que me apoyaras dándole una estrella a este repo o invitándome a un café.**
+**Si consideras que este proyecto ha sido útil, te agradecería que me apoyaras dándole una estrella a este repositorio o invitándome a un café.**
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/XDeadHackerX)
 
