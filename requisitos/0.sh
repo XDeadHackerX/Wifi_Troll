@@ -10,7 +10,7 @@ echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|   
 echo "                           \/                   /_____/                                       "
 echo "                                               ¯\_(ツ)_/¯"
 echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.0  ︻デ═一 " 
+echo "                                ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------"
