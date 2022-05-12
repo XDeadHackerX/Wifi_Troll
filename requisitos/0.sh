@@ -25,6 +25,7 @@ sudo apt-get install mdk4 -y
 sudo apt install hping3 -y
 sudo apt-get install bettercap -y
 sudo apt-get install -y netdiscover -y
+sudo apt install macchanger -y
 
 cd requisitos
 
