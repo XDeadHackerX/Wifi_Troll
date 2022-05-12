@@ -18,13 +18,13 @@ echo
 echo
 echo "[1] Requisitos"
 echo
-sudo apt-get install xterm
-sudo apt-get install gnome-terminal
-sudo apt install aircrack-ng
-sudo apt-get install mdk4
-sudo apt install hping3
-sudo apt-get install bettercap
-sudo apt-get install -y netdiscover
+sudo apt-get install xterm -y
+sudo apt-get install gnome-terminal -y
+sudo apt install aircrack-ng -y
+sudo apt-get install mdk4 -y
+sudo apt install hping3 -y
+sudo apt-get install bettercap -y
+sudo apt-get install -y netdiscover -y
 
 cd requisitos
 
