@@ -10,7 +10,7 @@ echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|   
 echo "                           \/                   /_____/                                       "
 echo "                                               ¯\_(ツ)_/¯"
 echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
+echo "                                ︻デ═一  Created by: XDeadHackerX v1.2  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------"
@@ -26,15 +26,11 @@ sudo apt install hping3 -y
 sudo apt-get install bettercap -y
 sudo apt-get install -y netdiscover -y
 sudo apt install macchanger -y
+sudo apt-get install john -y
 
 cd requisitos
 
-sudo rm -r geowifi
 sudo rm -r Inhibitor
-
-sudo git clone https://github.com/GONZOsint/geowifi.git && cd geowifi && apt install virtualenv && python3 -m virtualenv venv && source venv/bin/activate && python3 -m pip install -r requirements.txt
-
-cd ..
 
 sudo git clone https://github.com/XDeadHackerX/Inhibitor.git && cd Inhibitor && chmod 777 installer.sh && cp requisitos/es/inhibitor.sh . && chmod 777 inhibitor.sh
 

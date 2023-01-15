@@ -10,7 +10,7 @@ echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|   
 echo "                           \/                   /_____/                                       "
 echo "                                               ¯\_(ツ)_/¯"
 echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.1  ︻デ═一 " 
+echo "                                ︻デ═一  Created by: XDeadHackerX v1.2  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------"
@@ -21,7 +21,7 @@ echo
 cd requisitos >/dev/null
 cd Inhibitor >/dev/null
 echo "=============================="
-echo "       Ejecutando Scrit"
+echo "      Ejecutando Script"
 echo "   Creado por XDeadHackerX"
 echo "=============================="
 echo "-------->""                    |"
