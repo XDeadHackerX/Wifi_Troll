@@ -10,7 +10,7 @@ echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|   
 echo "                           \/                   /_____/                                       "
 echo "                                               ¯\_(ツ)_/¯"
 echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.2  ︻デ═一 " 
+echo "                                ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------"
@@ -39,10 +39,10 @@ read -p "[*] Elige una opcion: " opc4
 				echo
 				;;
 			2 )	echo
-				echo "===================================================="
-				echo "[1] Escaner avanzado Redes Wifi"
-				echo "[2] Escanear dispositivos conectados a un Wifi Ajeno"
-				echo "===================================================="
+				echo "================================================================"
+				echo "[1] Escaneres avanzados Redes Wifi + [Grafico]"
+				echo "[2] Escanear dispositivos conectados a un Wifi Ajeno + [Grafico]"
+				echo "================================================================"
 				echo
 				read -p "Elige una opcion: " opc5
 				####Activacion Modo Monitor y Modo Seguro####
@@ -102,7 +102,7 @@ read -p "[*] Elige una opcion: " opc4
 								echo "                           \/                   /_____/                                       "
 								echo "                                               ¯\_(ツ)_/¯"
 								echo "                              __________________________________________________"					
-								echo "                                ︻デ═一  Created by: XDeadHackerX v1.2  ︻デ═一 " 
+								echo "                                ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
 								echo "          -------------------------------------------------------------------------------------------"
 								echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
 								echo "          -------------------------------------------------------------------------------------------"
@@ -110,16 +110,51 @@ read -p "[*] Elige una opcion: " opc4
 								echo
 								echo "[#] Pulse Ctrl + c (Para detener el Escaneo una vez haya comenzado)"
 								echo
-								echo "==========================="
-								echo "[1] Escaner con Aircrack-ng"
+								echo "======================================="
+								echo "[1] Escaner con Aircrack-ng + [Grafico]"
 								echo "[2] Escaner con Bettercap"
 								echo "[3] Escaner con Wash"
-								echo "==========================="
+								echo "======================================="
 								echo
 								read -p "Elige una opcion: " opc4
 									case $opc4 in
 											1 )	echo
-												sudo airodump-ng $interfaz2 --band abg
+												if ! [ -d requisitos/resultados ]
+													then
+														mkdir requisitos/resultados
+												fi
+												echo
+												sudo airodump-ng $interfaz2 --band abg -w requisitos/resultados/captura_global
+												echo
+												sudo rm -r requisitos/resultados/captura_global-01.cap
+												sudo rm -r requisitos/resultados/captura_global-01.kismet.csv
+												sudo rm -r requisitos/resultados/captura_global-01.kismet.netxml
+												sudo rm -r requisitos/resultados/captura_global-01.log.csv
+												echo
+												sudo airgraph-ng -i requisitos/resultados/captura_global-01.csv -o requisitos/resultados/grafico_global -g CAPR >/dev/null
+												echo
+												echo "=============================="
+												echo "      Generando Grafico"
+												echo " De las Redes Wifi Escaneadas"
+												echo "=============================="
+												echo "-------->""                    |"
+												sleep 1
+												echo "--------------->""             |"
+												sleep 1
+												echo "---------------------->""      |"
+												sleep 1
+												echo "---------------------------->""|"
+												echo "=============================="
+												echo
+												echo
+												echo "Ruta del Grafico: [Wifi_Troll/requisitos/resultados/grafico_global]"
+												echo
+												read -p "[*] Quieres abrir el Grafico? (y/n): " open
+												echo
+												if [ $open = y ]
+													then
+														sudo open requisitos/resultados/grafico_global
+												fi
 												;;
 											2 )	echo
 												sudo bettercap -iface $interfaz2 -eval 'set ticker.commands "clear; wifi.show"; wifi.recon on; ticker on'
@@ -141,7 +176,7 @@ read -p "[*] Elige una opcion: " opc4
 								echo "                           \/                   /_____/                                       "
 								echo "                                               ¯\_(ツ)_/¯"
 								echo "                              __________________________________________________"					
-								echo "                                ︻デ═一  Created by: XDeadHackerX v1.2  ︻デ═一 " 
+								echo "                                ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
 								echo "          -------------------------------------------------------------------------------------------"
 								echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
 								echo "          -------------------------------------------------------------------------------------------"
@@ -157,7 +192,66 @@ read -p "[*] Elige una opcion: " opc4
 								echo "Listo"
 								echo "Pulse Ctrl + c para finalizar el Scaneo"
 								sleep 3
-								sudo airodump-ng -c $ch --bssid $bssid $interfaz2 --band abg
+								if ! [ -d requisitos/resultados ]
+									then
+										mkdir requisitos/resultados
+								fi
+								if ! [ -d requisitos/resultados/$bssid ]
+									then
+										mkdir requisitos/resultados/$bssid
+								fi
+								sudo airodump-ng -c $ch --bssid $bssid $interfaz2 --band abg  -w requisitos/resultados/$bssid/captura_$bssid
+								echo
+								sudo rm -r requisitos/resultados/$bssid/captura_$bssid-01.kismet.csv
+								sudo rm -r requisitos/resultados/$bssid/captura_$bssid-01.kismet.netxml
+								sudo rm -r requisitos/resultados/$bssid/captura_$bssid-01.log.csv
+								echo
+								sudo airgraph-ng -i requisitos/resultados/$bssid/captura_$bssid-01.csv -o requisitos/resultados/$bssid/grafico_$bssid -g CAPR >/dev/null
+								echo
+								echo "=============================="
+								echo "      Generando Grafico"
+								echo " De las Redes Wifi Escaneadas"
+								echo "=============================="
+								echo "-------->""                    |"
+								sleep 1
+								echo "--------------->""             |"
+								sleep 1
+								echo "---------------------->""      |"
+								sleep 1
+								echo "---------------------------->""|"
+								echo "=============================="
+								clear
+								echo
+								echo "                     __      __ .__   _____ .__        ___________                .__   .__   "
+								echo "                    /  \    /  \|__|_/ ____\|__|       \__    ___/_______   ____  |  |  |  |  "
+								echo "                    \   \/\/   /|  |\   __\ |  |         |    |   \_  __ \ /  _ \ |  |  |  |  " 
+								echo "                     \        / |  | |  |   |  |         |    |    |  | \/(  <_> )|  |__|  |__"
+								echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|    \____/ |____/|____/"
+								echo "                           \/                   /_____/                                       "
+								echo "                                               ¯\_(ツ)_/¯"
+								echo "                              __________________________________________________"					
+								echo "                                ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
+								echo "          -------------------------------------------------------------------------------------------"
+								echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
+								echo "          -------------------------------------------------------------------------------------------"
+								echo
+								echo
+								echo "------------------------------------------------------------"
+								echo "↓ Resultados--> $bssid | "`sudo aircrack-ng -J requisitos/resultados/$bssid/captura_$bssid-02 requisitos/resultados/$bssid/captura_$bssid-01.cap | awk 'NF==6{print $3}'`" ↓"
+								echo "------------------------------------------------------------"
+								echo
+								sudo aircrack-ng -J requisitos/resultados/$bssid/captura_$bssid-02 requisitos/resultados/$bssid/captura_$bssid-01.cap | awk 'FNR>= 5{print}' | awk 'FNR<= 3{print}'
+								sudo aircrack-ng -J requisitos/resultados/$bssid/captura_$bssid-02 requisitos/resultados/$bssid/captura_$bssid-01.cap | awk 'FNR>= 20{print}'
+								sudo hccap2john requisitos/resultados/$bssid/captura_$bssid-02.hccap > requisitos/resultados/$bssid/Hash.$bssid-03
+								echo
+								echo "[*] Ruta del Grafico: [Wifi_Troll/requisitos/resultados/$bssid/grafico_$bssid]"
+								echo
+								read -p "[*] Quieres abrir el Grafico? (y/n): " open
+								echo
+								if [ $open = y ]
+									then
+										sudo open requisitos/resultados/$bssid/grafico_$bssid
+								fi
 								;;
 							* )	echo
 								echo "$RRPLY No es una opcion valida"
@@ -184,6 +278,9 @@ read -p "[*] Elige una opcion: " opc4
 				sleep 1
 				echo "---------------------------->""|"
 				echo "=============================="
+				;;
+				* )	echo
+					echo "$RRPLY No es una opcion valida" && sleep 2 && bash requisitos/1.sh
 	esac
 echo
 echo

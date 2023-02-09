@@ -10,7 +10,7 @@ echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|   
 echo "                           \/                   /_____/                                       "
 echo "                                               ¯\_(ツ)_/¯"
 echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.2  ︻デ═一 " 
+echo "                                ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
 echo "          -------------------------------------------------------------------------------------------"
 echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
 echo "          -------------------------------------------------------------------------------------------"
@@ -21,12 +21,18 @@ echo
 sudo apt-get install xterm -y
 sudo apt-get install gnome-terminal -y
 sudo apt install aircrack-ng -y
+sudo apt install airgraph-ng -y
 sudo apt-get install mdk4 -y
 sudo apt install hping3 -y
 sudo apt-get install bettercap -y
 sudo apt-get install -y netdiscover -y
 sudo apt install macchanger -y
 sudo apt-get install john -y
+
+if ! [ -d requisitos/resultados ]
+	then
+		mkdir requisitos/resultados
+fi
 
 cd requisitos
 
