@@ -2,7 +2,7 @@
 
 > Herramienta creada por XDeadHackerX
 
-<p align="center"><img width="120px" alt="Version" src="https://img.shields.io/badge/version-1.2-red.svg?style=for-the-badge"/></p>
+<p align="center"><img width="120px" alt="Version" src="https://img.shields.io/badge/version-1.3-red.svg?style=for-the-badge"/></p>
 
 [![Wifi-Troll-1-2.png](https://i.postimg.cc/Qdf6Bps7/Wifi-Troll-1-2.png)](https://postimg.cc/PC8b9vCf)
 
@@ -10,7 +10,7 @@
 
 :ballot_box_with_check: **Escaner de Red Local** --> [*Escaneo constante o sacar un listado, Ip, MAC, Cantidad de Tráfico, Vendedor MAC*]
 
-:ballot_box_with_check: **Escaner de Redes Wifi** --> [*Opción de hacer el escaneo con Aircrack-ng, Bettercap y Wash. En todos los casos automatiza el proceso y obtiene la MAC, la distancia desde nuestra Tarjeta de Red, los Beacons, el Canal, la velocidad del Router, la Encriptación, el AUTH y el nombre de la Red Wifi*]
+:ballot_box_with_check: **Escaner de Redes Wifi** --> [*Opción de hacer el escaneo con Aircrack-ng, Bettercap y Wash. En el caso de usar Aircrack-ng cuando finaliza el escaneo te crea un Gráfico en el que te muestra un resumen de los dispositivos conectados, mostrándote (Mac, Fabricante de la Mac, Tipo de dispositivo y tiempo conectados a la Red). En todos los casos automatiza el proceso y obtiene la MAC, la distancia desde nuestra Tarjeta de Red, los Beacons, el Canal, la velocidad del Router, la Encriptación, el AUTH y el nombre de la Red Wifi*]
 
 :ballot_box_with_check: **Escaner de Dispositivos conectados a una Wifi** --> [*Muestra los dispositivos Wifi conectados a una Red Wifi, mostrando la MAC de los dispositivos, la cantidad de Tráfico, la distancia entre cada dispositivo y nuestra Tarjeta de Red, los paquetes de perdida, Notas y Probes*]
 
@@ -59,7 +59,9 @@
 
 (v1.1) --->   Nuevo Apartado [3] Espiar el Tráfico de nuestra red, podremos ver que servicios Webs está usando un dispositivo de nuestra red o de todos los dispositivos de nuestra red (HTTP y HTTPS). Grandes cambios en el Apartado [1] Escáner Red/Wifi, podremos analizar los dispositivos conectados a nuestra red o ver las redes Wifi de alrededor (Dándote a escoger entre 3 herramientas para hacerlo) y los dispositivos Wifi conectados a los Wifis. Optimización del código, corrección de errores, mejoras visuales.
 
-(v1.2) --->   La opción 4 quedo obsoleta y se ha remplazado por ([4]Extraer el HandShake de una Red Wifi), esta opción consigue de forma súper automática expulsar a todos los usuarios de la red wifi seleccionada durante 10 segundos para que cuando se vuelvan reconectar obtenga el Handshake y lo almacene en carpetas individuales.
+(v1.2) --->   La opción 4 quedo obsoleta y se ha remplazado por ([4] Extraer el HandShake de una Red Wifi), esta opción consigue de forma súper automática expulsar a todos los usuarios de la red wifi seleccionada durante 10 segundos para que cuando se vuelvan reconectar obtenga el Handshake y lo almacene en carpetas individuales.
+
+(v1.3) --->   Nueva función dentro del Apartado ([1] Escáner Red/Wifi) En el caso de escoger la Opción de Aircrack-ng cuando finaliza el escaneo te crea un Gráfico en el que te muestra un resumen de los dispositivos conectados, mostrándote (Mac, Fabricante de la Mac, Tipo de dispositivo y tiempo conectados a la Red)
 
 ## ⭐☕ Creado por XDeadHackerX ☕⭐
 
