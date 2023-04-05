@@ -1,21 +1,24 @@
 #!bin/bash
 
-clear
-echo
-echo "                     __      __ .__   _____ .__        ___________                .__   .__   "
-echo "                    /  \    /  \|__|_/ ____\|__|       \__    ___/_______   ____  |  |  |  |  "
-echo "                    \   \/\/   /|  |\   __\ |  |         |    |   \_  __ \ /  _ \ |  |  |  |  " 
-echo "                     \        / |  | |  |   |  |         |    |    |  | \/(  <_> )|  |__|  |__"
-echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|    \____/ |____/|____/"
-echo "                           \/                   /_____/                                       "
-echo "                                               ¯\_(ツ)_/¯"
-echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
-echo "          -------------------------------------------------------------------------------------------"
-echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
-echo "          -------------------------------------------------------------------------------------------"
-echo
-echo
+function Title {
+	clear
+	echo
+	echo "                     __      __ .__   _____ .__        ___________                .__   .__   "
+	echo "                    /  \    /  \|__|_/ ____\|__|       \__    ___/_______   ____  |  |  |  |  "
+	echo "                    \   \/\/   /|  |\   __\ |  |         |    |   \_  __ \ /  _ \ |  |  |  |  " 
+	echo "                     \        / |  | |  |   |  |         |    |    |  | \/(  <_> )|  |__|  |__"
+	echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|    \____/ |____/|____/"
+	echo "                           \/                   /_____/                                       "
+	echo "                                               ¯\_(ツ)_/¯"
+	echo "                              __________________________________________________"					
+	echo "                                ︻デ═一  Created by: XDeadHackerX v2.0  ︻デ═一 " 
+	echo "          -------------------------------------------------------------------------------------------"
+	echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
+	echo "          -------------------------------------------------------------------------------------------"
+	echo
+	echo	
+}
+
 echo "[2] Crear Redes Wifi masivas"
 echo
 echo "=========================="
@@ -67,22 +70,7 @@ read -p "Elige una opcion: " opc1
 				sleep 1
 				echo "--------------------->""|"
 				echo "======================="
-				clear
-				echo
-				echo "                     __      __ .__   _____ .__        ___________                .__   .__   "
-				echo "                    /  \    /  \|__|_/ ____\|__|       \__    ___/_______   ____  |  |  |  |  "
-				echo "                    \   \/\/   /|  |\   __\ |  |         |    |   \_  __ \ /  _ \ |  |  |  |  " 
-				echo "                     \        / |  | |  |   |  |         |    |    |  | \/(  <_> )|  |__|  |__"
-				echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|    \____/ |____/|____/"
-				echo "                           \/                   /_____/                                       "
-				echo "                                               ¯\_(ツ)_/¯"
-				echo "                              __________________________________________________"					
-				echo "                                ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
-				echo "          -------------------------------------------------------------------------------------------"
-				echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
-				echo "          -------------------------------------------------------------------------------------------"
-				echo
-				echo
+				Title
 				echo "[#] Pulse Ctrl + c (Para detener las Redes Wifi creadas)"
 				echo
 				sudo mdk4 $interfaz2 b -s 1000
@@ -129,22 +117,7 @@ read -p "Elige una opcion: " opc1
 				sleep 1
 				echo "--------------------->""|"
 				echo "======================="
-				clear
-				echo
-				echo "                     __      __ .__   _____ .__        ___________                .__   .__   "
-				echo "                    /  \    /  \|__|_/ ____\|__|       \__    ___/_______   ____  |  |  |  |  "
-				echo "                    \   \/\/   /|  |\   __\ |  |         |    |   \_  __ \ /  _ \ |  |  |  |  " 
-				echo "                     \        / |  | |  |   |  |         |    |    |  | \/(  <_> )|  |__|  |__"
-				echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|    \____/ |____/|____/"
-				echo "                           \/                   /_____/                                       "
-				echo "                                               ¯\_(ツ)_/¯"
-				echo "                              __________________________________________________"					
-				echo "                                ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
-				echo "          -------------------------------------------------------------------------------------------"
-				echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
-				echo "          -------------------------------------------------------------------------------------------"
-				echo
-				echo
+				Title
 				echo "[#] Modo Personalizacion"
 				echo
 				read -p "[*] Usar el mismo nombre para todas las Redes Wifi? (y/n): " opc2
@@ -191,22 +164,7 @@ $name(32)
 $name(33)
 $name(34)
 eof
-						clear
-						echo
-						echo "                     __      __ .__   _____ .__        ___________                .__   .__   "
-						echo "                    /  \    /  \|__|_/ ____\|__|       \__    ___/_______   ____  |  |  |  |  "
-						echo "                    \   \/\/   /|  |\   __\ |  |         |    |   \_  __ \ /  _ \ |  |  |  |  " 
-						echo "                     \        / |  | |  |   |  |         |    |    |  | \/(  <_> )|  |__|  |__"
-						echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|    \____/ |____/|____/"
-						echo "                           \/                   /_____/                                       "
-						echo "                                               ¯\_(ツ)_/¯"
-						echo "                              __________________________________________________"					
-						echo "                                ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
-						echo "          -------------------------------------------------------------------------------------------"
-						echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
-						echo "          -------------------------------------------------------------------------------------------"
-						echo
-						echo
+						Title
 						echo "[#] Pulse Ctrl + c (Para detener las Redes Wifi creadas)"
 						echo
 						sudo mdk4 $interfaz2 b -s 1000 -f requisitos/lista1.lst
@@ -238,22 +196,7 @@ $name8
 $name9
 $name10
 eof
-						clear
-						echo
-						echo "                     __      __ .__   _____ .__        ___________                .__   .__   "
-						echo "                    /  \    /  \|__|_/ ____\|__|       \__    ___/_______   ____  |  |  |  |  "
-						echo "                    \   \/\/   /|  |\   __\ |  |         |    |   \_  __ \ /  _ \ |  |  |  |  " 
-						echo "                     \        / |  | |  |   |  |         |    |    |  | \/(  <_> )|  |__|  |__"
-						echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|    \____/ |____/|____/"
-						echo "                           \/                   /_____/                                       "
-						echo "                                               ¯\_(ツ)_/¯"
-						echo "                              __________________________________________________"					
-						echo "                                ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
-						echo "          -------------------------------------------------------------------------------------------"
-						echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
-						echo "          -------------------------------------------------------------------------------------------"
-						echo
-						echo
+						Title
 						echo "[#] Pulse Ctrl + c (Para detener las Redes Wifi creadas)"
 						echo
 						sudo mdk4 $interfaz2 b -s 1000 -f requisitos/lista2.lst
@@ -263,22 +206,7 @@ eof
 				echo "$RRPLY No es una opcion valida"
 				bash requisitos/2.sh
 	esac
-clear
-echo
-echo "                     __      __ .__   _____ .__        ___________                .__   .__   "
-echo "                    /  \    /  \|__|_/ ____\|__|       \__    ___/_______   ____  |  |  |  |  "
-echo "                    \   \/\/   /|  |\   __\ |  |         |    |   \_  __ \ /  _ \ |  |  |  |  " 
-echo "                     \        / |  | |  |   |  |         |    |    |  | \/(  <_> )|  |__|  |__"
-echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|    \____/ |____/|____/"
-echo "                           \/                   /_____/                                       "
-echo "                                               ¯\_(ツ)_/¯"
-echo "                              __________________________________________________"					
-echo "                                ︻デ═一  Created by: XDeadHackerX v1.3  ︻デ═一 " 
-echo "          -------------------------------------------------------------------------------------------"
-echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
-echo "          -------------------------------------------------------------------------------------------"
-echo
-echo
+Title
 echo "[#] Desactivando Ataque y Protocolos"
 echo
 sudo ifconfig $interfaz2 down >/dev/null
