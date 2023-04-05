@@ -231,6 +231,8 @@ read -p "[*] Elige una opcion: " opc4
 									esac
 								;;
 							2 )	Title
+								echo "[#] Copia el BSSID y CHAN del Wifi objetivo, puede tardar hasta 1 minuto en aparecer la Red Objetivo"
+								echo
 								nmcli dev wifi list
 								echo
 								read -p "[*] Copia el BSSID del Wifi Objetivo y pegelo a continuacion: " bssid
