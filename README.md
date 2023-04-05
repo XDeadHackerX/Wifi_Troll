@@ -2,23 +2,25 @@
 
 > Herramienta creada por XDeadHackerX
 
-<p align="center"><img width="120px" alt="Version" src="https://img.shields.io/badge/version-1.3-red.svg?style=for-the-badge"/></p>
+<p align="center"><img width="120px" alt="Version" src="https://img.shields.io/badge/version-2.0-red.svg?style=for-the-badge"/></p>
 
-[![Wifi-Troll-1-2.png](https://i.postimg.cc/Qdf6Bps7/Wifi-Troll-1-2.png)](https://postimg.cc/PC8b9vCf)
+[![Wifi-Troll-2-0.png](https://i.postimg.cc/9FdJh54H/Wifi-Troll-2-0.png)](https://postimg.cc/D8zqrNdx)
 
 ## 💡 Funciones 💡
 
-:ballot_box_with_check: **Escaner de Red Local** --> [*Escaneo constante o sacar un listado, Ip, MAC, Cantidad de Tráfico, Vendedor MAC*]
+:ballot_box_with_check: **Escaner de Red Local** --> [*Escaneo constante o sacar un listado, Ip, MAC, Cantidad de Tráfico, Vendedor MAC. Ahora también te da la opción de hacer un escaneo de los puertos abiertos de una ip o de toda la Red*]
 
-:ballot_box_with_check: **Escaner de Redes Wifi** --> [*Opción de hacer el escaneo con Aircrack-ng, Bettercap y Wash. En el caso de usar Aircrack-ng cuando finaliza el escaneo te crea un Gráfico en el que te muestra un resumen de los dispositivos conectados, mostrándote (Mac, Fabricante de la Mac, Tipo de dispositivo y tiempo conectados a la Red). En todos los casos automatiza el proceso y obtiene la MAC, la distancia desde nuestra Tarjeta de Red, los Beacons, el Canal, la velocidad del Router, la Encriptación, el AUTH y el nombre de la Red Wifi*]
+:ballot_box_with_check: **Escaner de Redes Wifi** --> [*Opción de hacer el escaneo con Aircrack-ng, Bettercap, NmCli y Wash. En el caso de usar Aircrack-ng cuando finaliza el escaneo te crea un Gráfico en el que te muestra un esquema de las redes Wifi detectadas y los dispositivos conectados, mostrándote (Mac, Fabricante de la Mac, Tipo de dispositivo y tiempo conectados a la Red). En todas las opciones automatiza los escaneos y obtiene la MAC, la distancia desde nuestra Tarjeta de Red, los Beacons, el Canal, la velocidad del Router, la Encriptación, el AUTH y el nombre de la Red Wifi*]
 
-:ballot_box_with_check: **Escaner de Dispositivos conectados a una Wifi** --> [*Muestra los dispositivos Wifi conectados a una Red Wifi, mostrando la MAC de los dispositivos, la cantidad de Tráfico, la distancia entre cada dispositivo y nuestra Tarjeta de Red, los paquetes de perdida, Notas y Probes*]
+:ballot_box_with_check: **Escaner de Dispositivos conectados a una Wifi** --> [*Muestra los dispositivos Wifi conectados a una Red Wifi, cuando finaliza el escaneo te crea un Gráfico en el que te muestra un esquema de los dispositivos conectados mostrando la MAC de los dispositivos, la cantidad de Tráfico, la distancia entre cada dispositivo y nuestra Tarjeta de Red, los paquetes de perdida, Notas y Probes*]
 
 :ballot_box_with_check: **Crear Redes Wifi de forma Masiva** --> [*La posibilidad de crear +100 Redes Wifi con nombres Random y nombres Personalizados*]
 
 :ballot_box_with_check: **Espiar el Tráfico de una Red Local** --> [*Nos hace un escaneo de la Red Local y nos da a escoger entre una de las Ips conectadas a la Red y a partir de ahí nos mostrará todo el tráfico que genere, Páginas Web, protocolos de Seguridad, Usuario y Contraseña (Webs HTTP), etc*]
 
 :ballot_box_with_check: **Extraer el HandShake de una Red Wifi** --> [*Esta Opción nos facilita la tarea a la hora de recolectar el Handshake de una Red Wifi, ya que a veces puede llegar a ser una tarea tediosa. Este apartado está pensado para ser lo más sencillo posible para el Usuario, nos va abriendo consolas interactivas donde nos muestra información que necesitamos y tras finalizar se van cerrando de forma automática. El Ataque consiste en enviar paquetes de* **Disassociation** *a todos los usuarios de la Red durante 10 segundos para obligarles a conectarse de nuevo y obtener el Handshake de uno de los dispositivos*]
+
+:ballot_box_with_check: **Inhibir Redes Wifis y Dispositivos locales** --> [*Esta Opción ejecuta mi herramienta [Inhibitor](https://github.com/XDeadHackerX/Inhibitor) la cual es capaz de Inhibir cualquier (Red Wifi/Dispositivo Conectado) sin tener acceso a la Red Wifi víctima, para los que no disponen con una tarjeta de red compatible con el Modo Monitor, te da la opción de hacerle un DOS al router que estés conectado o a los dispositivos conectados a la Red*]
 
 
 ## 🛠 Instalar Herramienta 🛠
@@ -61,7 +63,9 @@
 
 (v1.2) --->   La opción 4 quedo obsoleta y se ha remplazado por ([4] Extraer el HandShake de una Red Wifi), esta opción consigue de forma súper automática expulsar a todos los usuarios de la red wifi seleccionada durante 10 segundos para que cuando se vuelvan reconectar obtenga el Handshake y lo almacene en carpetas individuales.
 
-(v1.3) --->   Nueva función dentro del Apartado ([1] Escáner Red/Wifi) En el caso de escoger la Opción de Aircrack-ng cuando finaliza el escaneo te crea un Gráfico en el que te muestra un resumen de los dispositivos conectados, mostrándote (Mac, Fabricante de la Mac, Tipo de dispositivo y tiempo conectados a la Red)
+(v1.3) --->   Nueva función dentro del Apartado ([1] Escáner Red/Wifi) Dentro de Wifi, en el caso de escoger la Opción de Aircrack-ng cuando finaliza el escaneo te crea un Gráfico en el que te muestra un resumen de los dispositivos conectados, mostrándote (Mac, Fabricante de la Mac, Tipo de dispositivo y tiempo conectados a la Red)
+
+(v2.0) --->   Nueva función dentro del Apartado ([1] Escáner Red/Wifi) Dentro de Red Local, sé a añadido la posibilidad de hacer un escaneo de los puertos abiertos de una IP o de toda la Red. Nueva función dentro del Apartado ([1] Escáner Red/Wifi) Dentro de Wifi, se ha agregado "NmCli" a las opciones de escaneo Wifi para poder tener una opción que no requiera de Tarjeta de Red compatible con el Modo Monitor. Solucionado error que sucedía al generar el Gráfico de las redes Wifi y sus usuarios. Cambios al escanear los dispositivos de una Red Wifi Ajena, primero se hacía un escaneo con Wash para enumerar las redes Wifi, al ver que es un escáner irregular, que a veces deja de funcionar durante días se ha sustituido por "NmCli", el cual es mucho más rápido, no necesita activar el Modo Monitor y da toda la información requerida para hacer el segundo escaneo = Scanear Red Wifi Individual. La herramienta ha sido optimizada, eliminando 200 líneas de código gracias a la programación modular.
 
 ## ⭐☕ Creado por XDeadHackerX ☕⭐
 
