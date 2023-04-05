@@ -27,8 +27,8 @@ echo "                                                 -----------"
 echo "                          [99] ==================""|""☢ Salir ☢""|""======================"
 echo "                                                 -----------"
 echo
-read -p " [*] Elige una opcion: " opc
-	case $opc in
+read -p " [*] Elige una opcion: " opc1
+	case $opc1 in
 			0 )	bash requisitos/0.sh
 				;;
 			1 )	bash requisitos/1.sh
