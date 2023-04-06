@@ -61,8 +61,6 @@
 
 <p align="center"> <img width="350px" src="https://s2.gifyu.com/images/Gif_Wifi_Troll.gif"></p>
 
-<img width="350px" src="https://gifyu.com/image/SdHJh">
-
 ## 🔎 Versiones 🔎
 
 (v1.0) --->   Versión Original.
