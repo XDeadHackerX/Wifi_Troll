@@ -57,7 +57,7 @@
 
 ## 🎬 Video 🎬
 
-<p align="center"><img src="https://vimeo.com/815234454"/></a><p>
+![Alt Text](https://vimeo.com/815234454) 
 
 ## 🔎 Versiones 🔎
 
