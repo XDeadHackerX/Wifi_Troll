@@ -57,7 +57,7 @@
 
 ## 🎬 Video 🎬
 
-[![Cap-Wifi-Troll-Mejorada.png](https://i.postimg.cc/NFmxGrG4/Cap-Wifi-Troll-Mejorada.png)](https://vimeo.com/815234454)
+[![Cap-Wifi-Troll.jpg](https://i.postimg.cc/Yq2JDpdP/Cap-Wifi-Troll.jpg)](https://vimeo.com/815234454)
 
 [![Gif-Wifi-Troll.gif](https://i.postimg.cc/3JcjrgPj/Gif-Wifi-Troll.gif)](https://postimg.cc/0b7KcJ5r)
 
