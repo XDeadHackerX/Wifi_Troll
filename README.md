@@ -67,9 +67,7 @@ Video Demo: https://vimeo.com/815234454
 
 ## 🎬 Video 🎬
 
-[![Cap-Wifi-Troll.jpg](https://i.postimg.cc/Yq2JDpdP/Cap-Wifi-Troll.jpg)](https://vimeo.com/815234454)
-
-<p align="center"> <img width="250px" src="https://s2.gifyu.com/images/Gif_Wifi_Troll_2.0.gif"></p>
+[![Cap-Wifi-Troll.jpg](https://i.postimg.cc/Yq2JDpdP/Cap-Wifi-Troll.jpg)](https://player.vimeo.com/video/815234454?h=9892561b2b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479)
 
 ## 🔎 Versiones 🔎
 
