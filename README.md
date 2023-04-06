@@ -6,11 +6,11 @@
 
 [![Wifi-Troll-2-0.png](https://i.postimg.cc/9FdJh54H/Wifi-Troll-2-0.png)](https://vimeo.com/815234454)
 
-Video Demo: https://vimeo.com/815234454
+Video Demo: https://player.vimeo.com/video/815234454?h=9892561b2b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
 
 ---
 
-*Buenas, soy* **XDeadHackerX** *y quiero presentaros la última versión de mi herramienta llamada* **Wifi_Troll**. *Esta Tool está enfocada al*  **Networking,** *Capaz de automatizar una amplia variedad de funciones.* **Opciones:** *Escaneo de Redes Wifi/Red Local, Creación Masiva de Redes Wifi, Extraer el HandShake de una Red Wifi, Inhibir todo tipo de Rede Wifi o equipos de nuestra Red, Espiar el tráfico de una red local.* **Modo Monitor:** *La herramienta se ha desarrollado con el fin de poder disfrutar de su variedad de opciones sin tener que disponer de una tarjeta de red que permita el modo monitor para usar cada una de sus opciones.* **[NO ME HAGO RESPONSABLE DEL MAL USO DE ESTA HERRAMIENTA]**
+*Buenas, soy* **XDeadHackerX** *y quiero presentaros la última versión de mi herramienta llamada* **Wifi_Troll**. *Esta Tool está enfocada al*  **Networking,** *Capaz de automatizar una amplia variedad de funciones.* **Opciones:** *Escaneo de Redes Wifi/Red Local, Creación Masiva de Redes Wifi, Extraer el HandShake de una Red Wifi, Inhibir todo tipo de Red Wifi o equipos de nuestra Red, Espiar el tráfico de una red local.* **Modo Monitor:** *La herramienta se ha desarrollado con el fin de poder disfrutar de su variedad de opciones sin tener que disponer de una tarjeta de red que permita el modo monitor para usar cada una de sus opciones.* **[NO ME HAGO RESPONSABLE DEL MAL USO DE ESTA HERRAMIENTA]**
 
 <p align="center"> <img width="250px" src="https://s2.gifyu.com/images/Radar2.gif"></p>
 
