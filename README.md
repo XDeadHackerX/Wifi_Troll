@@ -4,6 +4,8 @@
 
 <p align="center"><img width="120px" alt="Version" src="https://img.shields.io/badge/version-2.0-red.svg?style=for-the-badge"/></p>
 
+<p align="center"><img width="120px" alt="Version" src="https://drive.proton.me/urls/5NJENVC7AG#kS59rsgjkPxi/></p>
+
 [![Wifi-Troll-2-0.png](https://i.postimg.cc/9FdJh54H/Wifi-Troll-2-0.png)](https://postimg.cc/D8zqrNdx)
 
 ## 💡 Funciones 💡
