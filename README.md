@@ -6,7 +6,7 @@
 
 [![Wifi-Troll-2-0.png](https://i.postimg.cc/9FdJh54H/Wifi-Troll-2-0.png)](https://vimeo.com/815234454)
 
-Video Demo: https://player.vimeo.com/video/815234454?h=9892561b2b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
+Video Demo: https://vimeo.com/815234454
 
 ---
 
