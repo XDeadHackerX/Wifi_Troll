@@ -59,8 +59,6 @@
 
 [![Gif-Wifi-Troll.gif](https://i.postimg.cc/3JcjrgPj/Gif-Wifi-Troll.gif)](https://postimg.cc/0b7KcJ5r)
 
-<p align="center"> <img width="350px" src="https://s2.gifyu.com/images/Gif_Wifi_Troll.gif"></p>
-
 ## 🔎 Versiones 🔎
 
 (v1.0) --->   Versión Original.
