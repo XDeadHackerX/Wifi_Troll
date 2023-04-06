@@ -67,7 +67,7 @@
 
 [![Cap-Wifi-Troll.jpg](https://i.postimg.cc/Yq2JDpdP/Cap-Wifi-Troll.jpg)](https://vimeo.com/815234454)
 
-<p align="center"> <img width="350px" src="https://s2.gifyu.com/images/Gif_Wifi_Troll4121fdbfa317de6e.gif"></p>
+<p align="center"> <img width="350px" src="https://s2.gifyu.com/images/Gif_Wifi_Troll.gif"></p>
 
 ## 🔎 Versiones 🔎
 
