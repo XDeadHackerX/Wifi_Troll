@@ -109,7 +109,8 @@ read -p "[*] Elige una opcion: " opc4
 				echo "[1] Escaneo de las IPs conectadas + puertos"" |"
 				echo "[2] Escaneo continuo de las IPs conectadas""  |"
 				echo "[3] Escaneo rapido de las IPs conectadas""    |"
-				echo "[4] Salir""                                   |"
+				echo "[4] Escaneo de puertos""                      |"
+				echo "[5] Salir""                                   |"
 				echo "============================================="
 				echo
 				read -p "Elige una opcion: " opc5
@@ -129,7 +130,22 @@ read -p "[*] Elige una opcion: " opc4
 							3 )	read -p "[*] Escribe la Ip de Red (Ej: 192.168.1.0 o 192.168.0.0): " IpRed
 								sudo netdiscover -r $IpRed/24 -P
 								;;
-							4 )	exit && clear
+							4 )	echo
+								read -p "Escribe la Ip que desea escanear (Ej: 192.168.1.43 o 192.168.1.0/24): " Ip
+								read -p "Escanear los 1000 puertos mas usados (y) o los 65535 (n)? (y/n): " opc2
+								echo
+								if [ $opc2 = y ]
+									then
+										sudo gnome-terminal --geometry 80x24+1300+20 -- bash -c "sudo nmap -top-ports 1000 -Pn $Ip; sleep 999;"
+										read -p "[*] Pulse Enter para cerrar el Scaneo de Puertos: " close
+										sudo pkill gnome-terminal
+									else
+										sudo gnome-terminal --geometry 80x30+1300+20 -- bash -c "sudo nmap -sV -O -p '*' $Ip; sleep 999"
+										read -p "[*] Pulse Enter para cerrar el Scaneo de Puertos: " close
+										sudo pkill gnome-terminal
+								fi
+								;;
+							5 )	exit && clear
 								;;
 							* )	echo
 								echo "$RRPLY No es una opcion valida"
