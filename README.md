@@ -1,85 +1,71 @@
-# 🧨 Wifi_Troll 🧨
+# 🔓 The_Cracker 🔓
 
 > Herramienta creada por XDeadHackerX
 
-<p align="center"><img width="120px" alt="Version" src="https://img.shields.io/badge/version-2.0-red.svg?style=for-the-badge"/></p>
+<p align="center"> <img width="90px" alt="Version" src="https://img.shields.io/badge/version-1.0-yellow.svg?style=flat"/> <img width="87px" alt="GitHub watchers" src="https://visitor-badge.glitch.me/badge?page_id=The_Cracker&left_color=gray&right_color=yellow"/></p>
 
-[![Wifi-Troll-2-0.png](https://i.postimg.cc/9FdJh54H/Wifi-Troll-2-0.png)](https://vimeo.com/815234454)
-
-Video Demo: https://vimeo.com/815234454
+[![The-Cracker-1-0.png](https://i.postimg.cc/SNhCbRXV/The-Cracker-1-0.png)](https://postimg.cc/LhxnzH3Z)
 
 ---
 
-*Buenas, soy* **XDeadHackerX** *y quiero presentaros la última versión de mi herramienta llamada* **Wifi_Troll**. *Esta Tool está enfocada al*  **Networking,** *Capaz de automatizar una amplia variedad de funciones.* **Opciones:** *Escaneo de Redes Wifi/Red Local, Creación Masiva de Redes Wifi, Extraer el HandShake de una Red Wifi, Inhibir todo tipo de Red Wifi o equipos de nuestra Red, Espiar el tráfico de una red local.* **Modo Monitor:** *La herramienta se ha desarrollado con el fin de poder disfrutar de su variedad de opciones sin tener que disponer de una tarjeta de red que permita el modo monitor para usar cada una de sus opciones.* **[NO ME HAGO RESPONSABLE DEL MAL USO DE ESTA HERRAMIENTA]**
+*Herramienta dirigida exclusivamente al uso de **Fuerza Bruta** y **Ataques de Diccionario** a varios tipos de Objetivos.* 
 
-<p align="center"> <img width="250px" src="https://s2.gifyu.com/images/Radar2.gif"></p>
+*La necesidad de crear esta Tool es para que los expertos en ciberseguridad puedan evaluar de forma rápida y automatizada la robustez de las contraseñas usadas en sus Sistemas.* **[NO ME HAGO RESPONSABLE DEL MAL USO DE ESTA HERRAMIENTA]**
+
+<p align="center"><img src=https://i.postimg.cc/9XwTRSw4/password3.gif width="350px"/></p>
 
 ---
 
 ## 💡 Funciones 💡
 
-:ballot_box_with_check: **Escaner de Red Local** --> [*Escaneo constante o sacar un listado, Ip, MAC, Cantidad de Tráfico, Vendedor MAC. Ahora también te da la opción de hacer un escaneo de los puertos abiertos de una ip o de toda la Red.*]
+:ballot_box_with_check: **Desencriptar un Fichero** --> [**Fuerza bruta & Ataque de Diccionario:** *Ficheros Office, PDF, .rar .zip*]
 
-:ballot_box_with_check: **Escaner de Redes Wifi** --> [*Opción de hacer el escaneo con Aircrack-ng, Bettercap, NmCli y Wash. En el caso de usar Aircrack-ng cuando finaliza el escaneo te crea un Gráfico en el que te muestra un esquema de las redes Wifi detectadas y los dispositivos conectados, mostrándote (Mac, Fabricante de la Mac, Tipo de dispositivo y tiempo conectados a la Red). En todas las opciones automatiza los escaneos y obtiene la MAC, la distancia desde nuestra Tarjeta de Red, los Beacons, el Canal, la velocidad del Router, la Encriptación, el AUTH y el nombre de la Red Wifi.*]
+:ballot_box_with_check: **Desencriptar Protocolos Online** --> [**Ataque de Diccionario:** *FTP, SSH, Telnet, SMB, RDP*]
 
-:ballot_box_with_check: **Escaner de Dispositivos conectados a una Wifi** --> [*Muestra los dispositivos Wifi conectados a una Red Wifi, cuando finaliza el escaneo te crea un Gráfico en el que te muestra un esquema de los dispositivos conectados mostrando la MAC de los dispositivos, la cantidad de Tráfico, la distancia entre cada dispositivo y nuestra Tarjeta de Red, los paquetes de perdida, Notas y Probes.*]
+:ballot_box_with_check: **Desencriptar un Handshakes/Hash** --> [**Fuerza bruta & Ataque de Diccionario:** *Handshake obtenido de una Red Wifi, Hash obtenido por cualquier Archivo*]
 
-:ballot_box_with_check: **Crear Redes Wifi de forma Masiva** --> [*La posibilidad de crear +100 Redes Wifi con nombres Random y nombres Personalizados.*]
+:ballot_box_with_check: **Desencriptar el Login de una IP Local** --> [**Ataque de Diccionario:** *A una Ip y su puerto, la posibilidad de si desconoces esos dos datos te hace un escaneo rápido de tu Red en otra Terminal, escribes la Ip del Objetivo y seguidamente se abre otra terminal que hace un rápido escaneo de los puertos de esa IP, una vez escritos la IP y el puerto procede al Ataque de Diccionario.*]
 
-:ballot_box_with_check: **Espiar el Tráfico de una Red Local** --> [*Nos hace un escaneo de la Red Local y nos da a escoger entre una de las Ips conectadas a la Red y a partir de ahí nos mostrará todo el tráfico que genere, Páginas Web, protocolos de Seguridad, Usuario y Contraseña (Webs HTTP), etc.*]
+:ballot_box_with_check: **Crear diccionarios Personalizado** --> [**A personas y combinaciones:** *Este apartado te da varias opciones para crear un Diccionario personalizado al Objetivo, puedes crear un Dicc dirigido a una persona combinando (Nombre, Apellidos, Nickname, Birthdate, Padres, Hijos, Mascotas, etc.) o combinar letras y números o el abecedario o combinar palabras.*]
 
-:ballot_box_with_check: **Extraer el HandShake de una Red Wifi** --> [*Esta Opción nos facilita la tarea a la hora de recolectar el Handshake de una Red Wifi, ya que a veces puede llegar a ser una tarea tediosa. Este apartado está pensado para ser lo más sencillo posible para el Usuario, nos va abriendo consolas interactivas donde nos muestra información que necesitamos y tras finalizar se van cerrando de forma automática. El Ataque consiste en enviar paquetes de* **Disassociation** *a todos los usuarios de la Red durante 10 segundos para obligarles a conectarse de nuevo y obtener el Handshake de uno de los dispositivos.*]
-
-:ballot_box_with_check: **Inhibir Redes Wifis y Dispositivos locales** --> [*Esta Opción ejecuta mi herramienta [Inhibitor](https://github.com/XDeadHackerX/Inhibitor) la cual es capaz de Inhibir cualquier (Red Wifi/Dispositivo Conectado) sin tener acceso a la Red Wifi víctima, para los que no disponen con una tarjeta de red compatible con el Modo Monitor, te da la opción de hacerle un DOS al router que estés conectado o a los dispositivos conectados a la Red.*]
-
+:ballot_box_with_check: **Utilidades** --> [**Hash:** *Extraer el Hash del Handshakes (.cap = hash), Identificar un Hash y ver como sería el Hash de una contraseña en varios formatos*]
 
 ## 🛠 Instalar Herramienta 🛠
 
-1) sudo apt update && apt -y full-upgrade
+**0)** Instalar y usar la Herramienta con **Root**
 
-2) sudo apt-get install git
+**1)** sudo apt update && apt -y full-upgrade
 
-3) git clone https://github.com/XDeadHackerX/Wifi_Troll.git
+**2)** sudo apt-get install git
 
-4) cd Wifi_Troll
+**3)** git clone https://github.com/XDeadHackerX/The_Cracker
 
-5) chmod 777 wifi_troll.sh
+**4)** cd The_Cracker
 
-6) bash wifi_troll.sh
+**5)** chmod 777 the_cracker.sh
 
-7) Marcamos la opcion 0 para instalar las dependencias (Solo marcar la primera vez)
+**6)** bash the_cracker.sh
 
-8) Ya podemos disfrutar de la herramienta
+**7)** Ya podemos disfrutar de la herramienta
 
 ## 🎲 Tener en Cuenta 🎲
 
-[1] No hace falta poner la Tarjeta en Modo Monitor, las opciones que requieren de este Modo se activan y se desactivan de forma automática.
+**[1]** Una vez crackeada la contraseña por el momento no se almacena en ninguna parte, por eso os recomiendo copiarla y almacenarla.
 
-[2] Las opciones 1, 2, 4 y 5 cuentan con Modo Seguro, haciendo que cambie la MAC de la Tarjeta por una random cada vez que se ejecute una de estas opciones.
-
-[3] La herramienta soporta escaneos y ataques a las bandas Wifi 5GHz.
-
-[4] La opción 4 instala y ejecuta una herramienta desarrollada por [mi](https://github.com/XDeadHackerX) llamada [Inhibitor](https://github.com/XDeadHackerX/Inhibitor), está disponible en mis repositorios.
-
-[5] En la opción 4 una vez capturado el Handshake se almacena en la ruta requisitos/resultados/BSSID del Wifi/handshake-01.cap.
-
-[6] En la Carpeta donde se encuentra el Handshake podremos encontrar 2 archivos más terminados en (-02.hccap) y (Hash.XXX-03), estos solo se generan por si el usuario también los requiere.
-
-## 🎬 Video 🎬
-
-[![Cap-Wifi-Troll.jpg](https://i.postimg.cc/Yq2JDpdP/Cap-Wifi-Troll.jpg)](https://player.vimeo.com/video/815234454?h=9892561b2b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479)
+**[2]** En el apartado ([3]Desencriptar un Handshakes/Hash) si no contamos con el Handshake podéis combinar la herramienta con mi otra herramienta desarrollada por [mi](https://github.com/XDeadHackerX) llamada [Wifi_Troll](https://github.com/XDeadHackerX/Wifi_Troll) en la cual tiene un apartado específico para extraer de forma totalmente automatizada y muy rápida el Handshake, este se queda almacenado en una carpeta con la MAC de la Red Wifi dentro de la tool, para que solo tengamos que arrastrarla hasta la terminal donde se esté ejecutando [The_Cracker](https://github.com/XDeadHackerX/The_Cracker).
 
 ## 🔎 Versiones 🔎
 
-(v1.0) --->   Versión Original.
+**(v1.0)** ---> Versión Original.
 
-(v1.1) --->   Nuevo Apartado [3] Espiar el Tráfico de nuestra red, podremos ver que servicios Webs está usando un dispositivo de nuestra red o de todos los dispositivos de nuestra red (HTTP y HTTPS). Grandes cambios en el Apartado [1] Escáner Red/Wifi, podremos analizar los dispositivos conectados a nuestra red o ver las redes Wifi de alrededor (Dándote a escoger entre 3 herramientas para hacerlo) y los dispositivos Wifi conectados a los Wifis. Optimización del código, corrección de errores, mejoras visuales.
+## 🎬 Videos 🎬
 
-(v1.2) --->   La opción 4 quedo obsoleta y se ha remplazado por ([4] Extraer el HandShake de una Red Wifi), esta opción consigue de forma súper automática expulsar a todos los usuarios de la red wifi seleccionada durante 10 segundos para que cuando se vuelvan reconectar obtenga el Handshake y lo almacene en carpetas individuales.
 
-(v1.3) --->   Nueva función dentro del Apartado ([1] Escáner Red/Wifi) Dentro de Wifi, en el caso de escoger la Opción de Aircrack-ng cuando finaliza el escaneo te crea un Gráfico en el que te muestra un resumen de los dispositivos conectados, mostrándote (Mac, Fabricante de la Mac, Tipo de dispositivo y tiempo conectados a la Red)
+### ZIP
+<p align="center"><a href="https://asciinema.org/a/577876" target="_blank"><img src="https://asciinema.org/a/577876.svg" width="700px" /></a><p>
 
-(v2.0) --->   Nueva función dentro del Apartado ([1] Escáner Red/Wifi) Dentro de Red Local, sé a añadido la posibilidad de hacer un escaneo de los puertos abiertos de una IP o de toda la Red. Nueva función dentro del Apartado ([1] Escáner Red/Wifi) Dentro de Wifi, se ha agregado "NmCli" a las opciones de escaneo Wifi para poder tener una opción que no requiera de Tarjeta de Red compatible con el Modo Monitor. Solucionado error que sucedía al generar el Gráfico de las redes Wifi y sus usuarios. Cambios al escanear los dispositivos de una Red Wifi Ajena, primero se hacía un escaneo con Wash para enumerar las redes Wifi, al ver que es un escáner irregular, que a veces deja de funcionar durante días se ha sustituido por "NmCli", el cual es mucho más rápido, no necesita activar el Modo Monitor y da toda la información requerida para hacer el segundo escaneo = Scanear Red Wifi Individual. La herramienta ha sido optimizada, eliminando 200 líneas de código gracias a la programación modular.
+### PDF
+<p align="center"><a href="https://asciinema.org/a/577885" target="_blank"><img src="https://asciinema.org/a/577885.svg" width="700px" /></a><p>
 
 ## ⭐☕ Creado por XDeadHackerX ☕⭐
 
