@@ -53,19 +53,21 @@ Video Demo: https://vimeo.com/815234454
 
 ## 🎲 Tener en Cuenta 🎲
 
-[1] No hace falta poner la Tarjeta en Modo Monitor, las opciones que requieren de este Modo se activan y se desactivan de forma automática.
+**[1]** No hace falta poner la Tarjeta en Modo Monitor, las opciones que requieren de este Modo se activan y se desactivan de forma automática.
 
-[2] Las opciones 1, 2, 4 y 5 cuentan con Modo Seguro, haciendo que cambie la MAC de la Tarjeta por una random cada vez que se ejecute una de estas opciones.
+**[2]** Las opciones 1, 2, 4 y 5 cuentan con Modo Seguro, haciendo que cambie la MAC de la Tarjeta por una random cada vez que se ejecute una de estas opciones.
 
-[3] La herramienta soporta escaneos y ataques a las bandas Wifi 5GHz.
+**[3]** La herramienta soporta escaneos y ataques a las bandas Wifi 5GHz.
 
-[4] La opción 4 instala y ejecuta una herramienta desarrollada por [mi](https://github.com/XDeadHackerX) llamada [Inhibitor](https://github.com/XDeadHackerX/Inhibitor), está disponible en mis repositorios.
+**[4]** La opción 4 instala y ejecuta una herramienta desarrollada por [mi](https://github.com/XDeadHackerX) llamada [Inhibitor](https://github.com/XDeadHackerX/Inhibitor), está disponible en mis repositorios.
 
-[5] En la opción 4 una vez capturado el Handshake se almacena en la ruta requisitos/resultados/BSSID del Wifi/handshake-01.cap.
+**[5]** En la opción 4 una vez capturado el Handshake se almacena en la ruta requisitos/resultados/BSSID del Wifi/handshake-01.cap.
 
-[6] En la Carpeta donde se encuentra el Handshake podremos encontrar 2 archivos más terminados en (-02.hccap) y (Hash.XXX-03), estos solo se generan por si el usuario también los requiere.
+**[6]** En la Carpeta donde se encuentra el Handshake podremos encontrar 2 archivos más terminados en (-02.hccap) y (Hash.XXX-03), estos solo se generan por si el usuario también los requiere.
 
-[7] En el apartado ([4]Extraer el HandShake de una Red Wifi) si no sabéis como crackearlo podéis combinar la herramienta con mi otra herramienta desarrollada por [mi](https://github.com/XDeadHackerX) llamada [The_Cracker](https://github.com/XDeadHackerX/The_Cracker) en la cual tiene un apartado específico para desencriptar de forma totalmente automatizada por medio de diccionario o fuerza bruta el Handshake, solo tendremos que arrastrar el Handshake a la terminal donde se ejecuta [The_Cracker](https://github.com/XDeadHackerX/The_Cracker) para él se encargue del resto.
+**[7]** En el apartado ([4]Extraer el HandShake de una Red Wifi) si no sabéis como crackearlo podéis combinar la herramienta con mi otra herramienta desarrollada por [mi](https://github.com/XDeadHackerX) llamada [The_Cracker](https://github.com/XDeadHackerX/The_Cracker) en la cual tiene un apartado específico para desencriptar de forma totalmente automatizada por medio de diccionario o fuerza bruta el Handshake, solo tendremos que arrastrar el Handshake a la terminal donde se ejecuta [The_Cracker](https://github.com/XDeadHackerX/The_Cracker) para él se encargue del resto.
+
+**[8]** En caso de que tengas descargada una versión más antigua, te aconsejo borrarla y volver a instalar la herramienta (+requisitos) para solucionar errores y obtener mejoras, que hacen que la herramienta sea mucho mejor que las versiones anteriores.
 
 ## 🎬 Video 🎬
 
