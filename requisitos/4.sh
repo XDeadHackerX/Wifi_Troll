@@ -1,23 +1,6 @@
 #!bin/bash
 
-function Title {
-	clear
-	echo
-	echo "                     __      __ .__   _____ .__        ___________                .__   .__   "
-	echo "                    /  \    /  \|__|_/ ____\|__|       \__    ___/_______   ____  |  |  |  |  "
-	echo "                    \   \/\/   /|  |\   __\ |  |         |    |   \_  __ \ /  _ \ |  |  |  |  " 
-	echo "                     \        / |  | |  |   |  |         |    |    |  | \/(  <_> )|  |__|  |__"
-	echo "                      \__/\  /  |__| |__|   |__| ______  |____|    |__|    \____/ |____/|____/"
-	echo "                           \/                   /_____/                                       "
-	echo "                                               ¯\_(ツ)_/¯"
-	echo "                              __________________________________________________"					
-	echo "                                ︻デ═一  Created by: XDeadHackerX v2.0  ︻デ═一 " 
-	echo "          -------------------------------------------------------------------------------------------"
-	echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
-	echo "          -------------------------------------------------------------------------------------------"
-	echo
-	echo
-}
+source requisitos/0.sh
 
 function ActMonitor {
 	####Activacion Modo Monitor y Modo Seguro####
