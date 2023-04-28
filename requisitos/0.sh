@@ -339,15 +339,18 @@ if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
 	echo
 	sudo apt-get install xterm -y
 	sudo apt-get install gnome-terminal -y
+	sudo apt-get install wireless-tools aircrack-ng -y
 	sudo apt install aircrack-ng -y
 	sudo apt install airgraph-ng -y
+	apt install nmap -y
 	sudo apt-get install mdk4 -y
 	sudo apt install hping3 -y
 	sudo apt-get install bettercap -y
 	sudo apt-get install -y netdiscover -y
 	sudo apt install macchanger -y
 	sudo apt-get install john -y
-	apt install iw -y
+	sudo apt install iw -y
+	sudo apt-get install network-manager -y
 
 	if ! [ -d requisitos/resultados ]
 		then

