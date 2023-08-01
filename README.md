@@ -78,32 +78,30 @@ Video Demo: https://vimeo.com/815234454
 
 ## 🔎 Versiones 🔎
 
-(v1.0) --->   Versión Original.
-
-(v1.1) --->   Nuevo Apartado [4] Espiar el Tráfico de nuestra red, podremos ver que servicios Webs está usando un dispositivo de nuestra red o de todos los dispositivos de nuestra red (HTTP y HTTPS). Grandes cambios en el Apartado [2] Escáner Red/Wifi, podremos analizar los dispositivos conectados a nuestra red o ver las redes Wifi de alrededor (Dándote a escoger entre 3 herramientas para hacerlo) y los dispositivos Wifi conectados a los Wifis. Optimización del código, corrección de errores, mejoras visuales.
-
-(v1.2) --->   La opción 4 quedo obsoleta y se ha remplazado por ([5] Extraer el HandShake de una Red Wifi), esta opción consigue de forma súper automática expulsar a todos los usuarios de la red wifi seleccionada durante 10 segundos para que cuando se vuelvan reconectar obtenga el Handshake y lo almacene en carpetas individuales.
-
-(v1.3) --->   Nueva función dentro del Apartado ([2] Escáner Red/Wifi) Dentro de Wifi, en el caso de escoger la Opción de Aircrack-ng cuando finaliza el escaneo te crea un Gráfico en el que te muestra un resumen de los dispositivos conectados, mostrándote (Mac, Fabricante de la Mac, Tipo de dispositivo y tiempo conectados a la Red)
-
-(v2.0) --->   Nueva función dentro del Apartado ([2] Escáner Red/Wifi) Dentro de Red Local, sé a añadido la posibilidad de hacer un escaneo de los puertos abiertos de una IP o de toda la Red. Nueva función dentro del Apartado ([2] Escáner Red/Wifi) Dentro de Wifi, se ha agregado "NmCli" a las opciones de escaneo Wifi para poder tener una opción que no requiera de Tarjeta de Red compatible con el Modo Monitor. Solucionado error que sucedía al generar el Gráfico de las redes Wifi y sus usuarios. Cambios al escanear los dispositivos de una Red Wifi Ajena, primero se hacía un escaneo con Wash para enumerar las redes Wifi, al ver que es un escáner irregular, que a veces deja de funcionar durante días se ha sustituido por "NmCli", el cual es mucho más rápido, no necesita activar el Modo Monitor y da toda la información requerida para hacer el segundo escaneo = Scanear Red Wifi Individual. La herramienta ha sido optimizada, eliminando 200 líneas de código gracias a la programación modular.
-
-(v2.1) --->   Nuevo Apartado ([1] Tarjeta de Red), cuenta con las siguientes opciones: **Información de la Tarjeta de Red** (Datos Técnicos, Interfaces, Drivers, Chipset, MACs, Modos Compatibles con la Tarjeta de Red, Qué tipo de Modo está Activo en la Tarjeta de Red, Tasa de Transferencia de Datos), **Información Frecuencias** (Frecuencias compatibles con tu Tarjeta de Red), **Activar modo Monitor** (Activa el Modo Monitor y Cambia la MAC, NO HACE FALTA PARA USAR LA HERRAMIENTA), **Restablecer Tarjeta de Red** (Desactiva el Modo Monitor, pone la MAC por defecto y reinicia el NetworkManager). Se a mejorado el apartado ([5] Extraer el HandShake de una Red Wifi), para ser mas precioso y eficaz, reduciendo el margen de error. Se ha reducido el margen de errores con el Modo Monitor y mejorado la apariencia de la herramienta a la hora de comprobar el Modo de la Tarjeta de Red y Activar el Modo Monitor.
-
-<ul>
-  <li>
-    <details>
-      <summary>(v1.0)</summary>
-      <p>Versión Original.</p>
-    </details>
-  </li>
-  <li>
-    <details>
-      <summary>v1.1</summary>
-      <p>Nuevo Apartado [4] Espiar el Tráfico de nuestra red, podremos ver que servicios Webs está usando un dispositivo de nuestra red o de todos los dispositivos de nuestra red (HTTP y HTTPS). Grandes cambios en el Apartado [2] Escáner Red/Wifi, podremos analizar los dispositivos conectados a nuestra red o ver las redes Wifi de alrededor (Dándote a escoger entre 3 herramientas para hacerlo) y los dispositivos Wifi conectados a los Wifis. Optimización del código, corrección de errores, mejoras visuales.</p>
-    </details>
-  </li>
-</ul>
+<details>
+  <summary>[ v1.0 ]</summary>
+  <p align="justify">[#] Versión Original.</p>
+</details>
+<details>
+  <summary>[ v1.1 ]</summary>
+  <p align="justify">[#] Nuevo Apartado [4] Espiar el Tráfico de nuestra red, podremos ver que servicios Webs está usando un dispositivo de nuestra red o de todos los dispositivos de nuestra red (HTTP y HTTPS). Grandes cambios en el Apartado [2] Escáner Red/Wifi, podremos analizar los dispositivos conectados a nuestra red o ver las redes Wifi de alrededor (Dándote a escoger entre 3 herramientas para hacerlo) y los dispositivos Wifi conectados a los Wifis. Optimización del código, corrección de errores, mejoras visuales.</p>
+</details>
+<details>
+  <summary>[ v1.2 ]</summary>
+  <p align="justify">[#] La opción 4 quedo obsoleta y se ha remplazado por ([5] Extraer el HandShake de una Red Wifi), esta opción consigue de forma súper automática expulsar a todos los usuarios de la red wifi seleccionada durante 10 segundos para que cuando se vuelvan reconectar obtenga el Handshake y lo almacene en carpetas individuales.</p>
+</details>
+<details>
+  <summary>[ v1.3 ]</summary>
+  <p align="justify">[#] Nueva función dentro del Apartado ([2] Escáner Red/Wifi) Dentro de Wifi, en el caso de escoger la Opción de Aircrack-ng cuando finaliza el escaneo te crea un Gráfico en el que te muestra un resumen de los dispositivos conectados, mostrándote (Mac, Fabricante de la Mac, Tipo de dispositivo y tiempo conectados a la Red).</p>
+</details>
+<details>
+  <summary>[ v2.0 ]</summary>
+  <p align="justify">[#] Nueva función dentro del Apartado ([2] Escáner Red/Wifi) Dentro de Red Local, sé a añadido la posibilidad de hacer un escaneo de los puertos abiertos de una IP o de toda la Red. Nueva función dentro del Apartado ([2] Escáner Red/Wifi) Dentro de Wifi, se ha agregado "NmCli" a las opciones de escaneo Wifi para poder tener una opción que no requiera de Tarjeta de Red compatible con el Modo Monitor. Solucionado error que sucedía al generar el Gráfico de las redes Wifi y sus usuarios. Cambios al escanear los dispositivos de una Red Wifi Ajena, primero se hacía un escaneo con Wash para enumerar las redes Wifi, al ver que es un escáner irregular, que a veces deja de funcionar durante días se ha sustituido por "NmCli", el cual es mucho más rápido, no necesita activar el Modo Monitor y da toda la información requerida para hacer el segundo escaneo = Scanear Red Wifi Individual. La herramienta ha sido optimizada, eliminando 200 líneas de código gracias a la programación modular.</p>
+</details>
+<details>
+  <summary>[ v2.1 ]</summary>
+  <p align="justify">[#] Nuevo Apartado ([1] Tarjeta de Red), cuenta con las siguientes opciones: Información de la Tarjeta de Red (Datos Técnicos, Interfaces, Drivers, Chipset, MACs, Modos Compatibles con la Tarjeta de Red, Qué tipo de Modo está Activo en la Tarjeta de Red, Tasa de Transferencia de Datos), Información Frecuencias (Frecuencias compatibles con tu Tarjeta de Red), Activar modo Monitor (Activa el Modo Monitor y Cambia la MAC, NO HACE FALTA PARA USAR LA HERRAMIENTA), Restablecer Tarjeta de Red (Desactiva el Modo Monitor, pone la MAC por defecto y reinicia el NetworkManager). Se a mejorado el apartado ([5] Extraer el HandShake de una Red Wifi), para ser mas precioso y eficaz, reduciendo el margen de error. Se ha reducido el margen de errores con el Modo Monitor y mejorado la apariencia de la herramienta a la hora de comprobar el Modo de la Tarjeta de Red y Activar el Modo Monitor.</p>
+</details>
 
 
 ## ⭐☕ Creado por XDeadHackerX ☕⭐
