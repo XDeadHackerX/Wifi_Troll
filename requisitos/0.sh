@@ -163,8 +163,6 @@ function ActMonitor {
 		echo "======================="
 	else
 		card
-		clear
-		logo1
 		echo
 		read -p "[*] Escribe la Interfaz de la Tarjeta de Red (Ej: wlan0): " interfaz
 		read -p "[*] Cortar la salida a internet para evitar futuros errores? (y/n): " fails
@@ -288,27 +286,6 @@ function DesaMonitor2 {
 	sleep 1
 	echo "---------------------------->""|"
 	echo "=============================="
-	echo
-	clear
-	logo1
-	sudo ifconfig $interfaz down >/dev/null
-	sleep 2.5
-	sudo ifconfig $interfaz promisc >/dev/null
-	sudo macchanger -p $interfaz >/dev/null
-	sudo ifconfig $interfaz up >/dev/null
-	sudo ifconfig $interfaz -promisc >/dev/null
-	echo
-	echo "==========================="
-	echo " Poniendo la MAC Original"
-	echo "==========================="
-	echo "------->""                  |"
-	sleep 1
-	echo "------------>""             |"
-	sleep 1
-	echo "------------------->""      |"
-	sleep 1
-	echo "------------------------->""|"
-	echo "==========================="
 	echo
 	sudo /etc/init.d/networking restart
 }

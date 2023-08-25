@@ -26,10 +26,10 @@ read -p "[*] Elige una opcion: " opc4
 					case $opc5 in
 							1 )	echo
 								read -p "[*] Escribe la Ip de Red (Ej: 192.168.1.0 o 192.168.0.0): " IpRed
-								sudo gnome-terminal --geometry 80x38+1300+20 -- sudo netdiscover -r $IpRed/24
+								sudo gnome-terminal --geometry 80x54+1300+20 -- bash -c "sudo netdiscover -r $IpRed/24; sleep 9999999999;" &
 								read -p "[*] Escribe la Ip que desea escanear (Ej: 192.168.1.43 o 192.168.1.0/24): " Ip
 								sudo pkill gnome-terminal
-								sudo gnome-terminal --geometry 80x24+1300+20 -- bash -c "sudo nmap -top-ports 1000 -Pn $Ip; sleep 9999999999;"
+								sudo gnome-terminal --geometry 80x24+1300+20 -- bash -c "sudo nmap -top-ports 1000 -Pn $Ip; sleep 9999999999;" &
 								read -p "[*] Pulse Enter para cerrar el Scaneo de Puertos: " close
 								sudo pkill gnome-terminal
 								;;
@@ -45,11 +45,11 @@ read -p "[*] Elige una opcion: " opc4
 								echo
 								if [ $opc2 = y ]
 									then
-										sudo gnome-terminal --geometry 80x24+1300+20 -- bash -c "sudo nmap -top-ports 1000 -Pn $Ip; sleep 9999999999;"
+										sudo gnome-terminal --geometry 80x24+1300+20 -- bash -c "sudo nmap -top-ports 1000 -Pn $Ip; sleep 9999999999;" &
 										read -p "[*] Pulse Enter para cerrar el Scaneo de Puertos: " close
 										sudo pkill gnome-terminal
 									else
-										sudo gnome-terminal --geometry 80x30+1300+20 -- bash -c "sudo nmap -sV -O -p '*' $Ip; sleep 99999999999"
+										sudo gnome-terminal --geometry 80x30+1300+20 -- bash -c "sudo nmap -sV -O -p '*' $Ip; sleep 99999999999" &
 										read -p "[*] Pulse Enter para cerrar el Scaneo de Puertos: " close
 										sudo pkill gnome-terminal
 								fi
@@ -187,7 +187,7 @@ read -p "[*] Elige una opcion: " opc4
 											* )	echo
 												echo "$RRPLY No es una opcion valida"
 												sleep 2
-                								bash requisitos/1.sh
+                								bash requisitos/2.sh
 									esac
 								;;
 							2 )	#Comprobacion de que la Tarjeta de Red tenga puesto el Modo Managed y si no lo cambia + rellenar contendor $interfaz#
@@ -274,7 +274,7 @@ read -p "[*] Elige una opcion: " opc4
 							* )	echo
 								echo "$RRPLY No es una opcion valida"
 								sleep 2
-                				bash requisitos/1.sh
+                				bash requisitos/2.sh
 					esac
 				;;
 				* )	echo
