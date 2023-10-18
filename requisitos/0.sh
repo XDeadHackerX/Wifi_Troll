@@ -26,7 +26,7 @@ function Title {
 	echo "                           \/                   /_____/                                       "
 	echo "                                               ¯\_(ツ)_/¯"
 	echo "                              __________________________________________________"					
-	echo "                                ︻デ═一  Created by: XDeadHackerX v2.1  ︻デ═一 " 
+	echo "                                ︻デ═一  Created by: XDeadHackerX v2.2  ︻デ═一 " 
 	echo "          -------------------------------------------------------------------------------------------"
 	echo "          Cualquier acción y o actividad relacionada con Wifi_Troll es únicamente su responsabilidad"
 	echo "          -------------------------------------------------------------------------------------------"
@@ -323,6 +323,7 @@ if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
 	sudo apt-get install mdk4 -y
 	sudo apt install hping3 -y
 	sudo apt-get install bettercap -y
+	sudo apt install wireshark -y
 	sudo apt-get install -y netdiscover -y
 	sudo apt install macchanger -y
 	sudo apt-get install john -y
