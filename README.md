@@ -2,9 +2,9 @@
 
 > Herramienta creada por XDeadHackerX
 
-<p align="center"><img width="120px" alt="Version" src="https://img.shields.io/badge/version-2.1-red.svg?style=for-the-badge"/></p>
+<p align="center"><img width="120px" alt="Version" src="https://img.shields.io/badge/version-2.2-red.svg?style=for-the-badge"/></p>
 
-[![Wifi-Troll-2-1.png](https://i.postimg.cc/8zDwxrk7/Wifi-Troll-2-1.png)](https://vimeo.com/815234454)
+[![Wifi-Troll-2-2.png](https://i.postimg.cc/4xhYCyVm/Wifi-Troll-2-2.png)](https://postimg.cc/87NpM1yS)
 
 <p>Vídeo Demo: <a href="#punto1">Pulse aquí</a> o <a href="https://vimeo.com/815234454">aquí</a></p>
 
@@ -27,7 +27,7 @@
 
 :ballot_box_with_check: **Crear Redes Wifi de forma Masiva** --> [*La posibilidad de crear +100 Redes Wifi con nombres Random y nombres Personalizados.*]
 
-:ballot_box_with_check: **Espiar el Tráfico de una Red Local** --> [*Nos hace un escaneo de la Red Local y nos da a escoger entre una de las Ips conectadas a la Red y a partir de ahí nos mostrará todo el tráfico que genere, Páginas Web, protocolos de Seguridad, Usuario y Contraseña (Webs HTTP), etc.*]
+:ballot_box_with_check: **Espiar el Trafico de una Red Local** --> [*Este apartado es realmente muy potente, al igual que útil al revelar de una forma sencilla y visual los secretos de los dispositivos conectados a una Red. El apartado cuenta con 3 opciones. La primera opción te permite realizar un escaneo instantáneo de la Red Local, mostrándote las IPs y MAC de los dispositivos conectados. A partir de ahí, puedes seleccionar cualquier dispositivo y acceder a su tráfico en tiempo real. La segunda opción va más allá al capturar de inmediato todo el tráfico generado por cada dispositivo. Y la tercera opción puede llegar a ahorrar mucho tiempo, ya que te ofrece un listado completo de todos los archivos PCAP generados en cada una de las sesiones. Al seleccionar uno de estos archivos, se abrirá con Wireshark para realizar un análisis exhaustivo. Esta herramienta es capaz de revelar una amplia gama de información, incluyendo páginas web visitadas, aplicaciones web utilizadas, protocolos de red en acción, el arte del "Packet Sniffing", la identificación de dispositivos y sistemas operativos (excluyendo el tráfico SSL), e incluso la exposición de usuarios y contraseñas no encriptadas.*]
 
 :ballot_box_with_check: **Extraer el HandShake de una Red Wifi** --> [*Esta Opción nos facilita la tarea a la hora de recolectar el Handshake de una Red Wifi, ya que a veces puede llegar a ser una tarea tediosa. Este apartado está pensado para ser lo más sencillo posible para el Usuario, nos va abriendo consolas interactivas donde nos muestra información que necesitamos y tras finalizar se van cerrando de forma automática. El Ataque consiste en enviar paquetes de* **Disassociation** *a todos los usuarios de la Red durante 10 segundos para obligarles a conectarse de nuevo y obtener el Handshake de uno de los dispositivos.*]
 
@@ -70,7 +70,9 @@
 
 **[7]** En el apartado ([5]Extraer el HandShake de una Red Wifi) si no sabéis como crackearlo podéis combinar la herramienta con mi otra herramienta desarrollada por [mi](https://github.com/XDeadHackerX) llamada [The_Cracker](https://github.com/XDeadHackerX/The_Cracker) en la cual tiene un apartado específico para desencriptar de forma totalmente automatizada por medio de diccionario o fuerza bruta el Handshake, solo tendremos que arrastrar el Handshake a la terminal donde se ejecuta [The_Cracker](https://github.com/XDeadHackerX/The_Cracker) para él se encargue del resto.
 
-**[8]** En caso de que tengas descargada una versión más antigua, te aconsejo borrarla y volver a instalar la herramienta (+requisitos) para solucionar errores y obtener mejoras, que hacen que la herramienta sea mucho mejor que las versiones anteriores.
+**[8]** En el apartado ([4] Espiar el Tráfico de nuestra Red) es un apartado realmente útil para interceptar los paquetes que pasan por la red a la que estemos conectados, ahora, la herramienta está pensada para el escaneo de los paquetes más importantes (Webs, tráfico, credenciales, etc.) pero no tiene en cuenta absolutamente todas las comunicaciones que hay, ya que hay muchas que realmente no son útiles a la hora de espiar. En caso de querer capturar absolutamente todos los paquetes que pasen por la red, recomiendo utilizar la herramienta Wireshark.
+
+**[9]** En caso de que tengas descargada una versión más antigua, te aconsejo borrarla y volver a instalar la herramienta (+requisitos) para solucionar errores y obtener mejoras, que hacen que la herramienta sea mucho mejor que las versiones anteriores.
 
 ## 🎬 Video 🎬 <a name="punto1"></a>
 
@@ -101,6 +103,10 @@
 <details>
   <summary>[ v2.1 ]</summary>
   <p align="justify">[#] Nuevo Apartado ([1] Tarjeta de Red), cuenta con las siguientes opciones: Información de la Tarjeta de Red (Datos Técnicos, Interfaces, Drivers, Chipset, MACs, Modos Compatibles con la Tarjeta de Red, Qué tipo de Modo está Activo en la Tarjeta de Red, Tasa de Transferencia de Datos), Información Frecuencias (Frecuencias compatibles con tu Tarjeta de Red), Activar modo Monitor (Activa el Modo Monitor y Cambia la MAC, NO HACE FALTA PARA USAR LA HERRAMIENTA), Restablecer Tarjeta de Red (Desactiva el Modo Monitor, pone la MAC por defecto y reinicia el NetworkManager). Se a mejorado el apartado ([5] Extraer el HandShake de una Red Wifi), para ser mas precioso y eficaz, reduciendo el margen de error. Se ha reducido el margen de errores con el Modo Monitor y mejorado la apariencia de la herramienta a la hora de comprobar el Modo de la Tarjeta de Red y Activar el Modo Monitor.</p>
+</details>
+<details>
+  <summary>[ v2.2 ]</summary>
+  <p align="justify">[#] Se a replanteado el Apartado ([4] Espiar el Trafico de una Red Local) dandole un giro de 360°, ahora es capaz de capturar y mostrar de forma muy sencilla los servicios que están utilizando los dispositivos conectados a una Red. Esta opción nos da la posibilidad de hacer un escaneo de la Red Local y así escoger entre una de las Ips conectadas a la Red y a partir de ahí nos mostrará todo el tráfico que genere, o directamente capturar todo el tráfico que esté generando cada dispositivo. Entre la información que es capaz de capturar están las Páginas Web, Aplicaciones Web, Packet Sniffing, Fingerprinting de dispositivos y sistemas operativos (No SSL), Usuarios y Contraseñas (No Encriptados), Protocolos de Red, etc. Ahora, cuando finalice el Sniffeo le indicará la ruta donde se ha guardado todo el tráfico en un archivo .pcap para su posterior analisis.</p>
 </details>
 
 
