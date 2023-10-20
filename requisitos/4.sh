@@ -90,7 +90,7 @@ read -p "Elige una opcion: " opc1
 				if [[ $seleccion =~ ^[0-9]+$ && $seleccion -ge 1 && $seleccion -le ${#archivos[@]} ]]; then
 				archivo_seleccionado="${archivos[$((seleccion - 1))]}"
 				echo "Ejecutando Wireshark en $archivo_seleccionado..."
-				sudo wireshark "$archivo_seleccionado"
+				sudo wireshark -r "$archivo_seleccionado"
 				else
 				echo "Selección no válida. Debes ingresar un número válido."
 				fi
